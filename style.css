@@ -154,11 +154,11 @@ body {
 }
 
 #panel1{
-  background-image: url('home-iFarm.svg');
+  background-image: url('src/Home/home-iFarm.svg');
 }
 
 #panel2{
-background-image: url('home-mission.svg');  
+background-image: url('src/Home/home-mission.svg');
 }
 #panel2 .btn{
   width: fit-content;
@@ -166,7 +166,7 @@ background-image: url('home-mission.svg');
 
 /*cambiare qui immagine panel3*/
 #panel3{
-  background-image: url('home-mission.svg'); 
+  background-image: url('src/Home/home-mission.svg');
 }
 #btns-3{
   grid-template-areas: "btn-3-1 btn-3-2";
@@ -182,7 +182,7 @@ background-image: url('home-mission.svg');
 }
 
 #panel4{
-   background-image: url('home-azienda-cliente.svg'); 
+   background-image: url('src/Home/home-azienda-cliente.svg');
 }
 #btns-4{
   grid-template-areas: "btn-4-1 btn-4-2";
