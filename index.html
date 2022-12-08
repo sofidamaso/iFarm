@@ -173,7 +173,7 @@
           if (scdir === 'up' && Math.abs(slength) < (plength - plength / pnls)) {
             //se è l'ultimo allora ...
             if(checkVisible(panel4)){
-              step = footer.offsetHeight/vh;
+              step = parseInt(footer.offsetHeight/vh);
             }
             if(checkVisible(footer)){
               step = 0;
@@ -182,7 +182,7 @@
             slength = slength - step;
           } else if (scdir === 'down' && slength < 0) {
             if(checkVisible(footer)){
-              step = footer.offsetHeight/vh;
+              step = parseInt(footer.offsetHeight/vh);
             }
             slength = slength + step;
           } /*else if (scdir === 'top') {
