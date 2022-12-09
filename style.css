@@ -373,7 +373,8 @@ html, body {
         align-self: center;
     }
 }
-/* Per la mappa */
+
+/*About*/
 #map-div {
     width: 75vw;
     height: 75vh;
