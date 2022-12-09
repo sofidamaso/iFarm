@@ -233,19 +233,19 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-#card1{
+.card1{
     grid-area: card1;
 }
-#card2{
+.card2{
     grid-area: card2;
 }
-#card3{
+.card3{
     grid-area: card3;
 }
-#card4{
+.card4{
     grid-area: card4;
 }
-#card5{
+.card5{
     grid-area: card5;
 }
 
@@ -280,22 +280,22 @@ html, body {
     grid-column-start: 1;
     grid-column-end: 1;
 }
-#timeline-part1{
+.timeline-part1{
     grid-area: timeline1;
 }
-#timeline-part2{
+.timeline-part2{
     grid-area: timeline2;
 }
-#timeline-part3{
+.timeline-part3{
     grid-area: timeline3;
 }
-#timeline-part4{
+.timeline-part4{
     grid-area: timeline4;
 }
-#timeline-part5{
+.timeline-part5{
     grid-area: timeline5;
 }
-#timeline-part6{
+.timeline-part6{
     grid-area: timeline-end;
 }
 #line-end-des{
