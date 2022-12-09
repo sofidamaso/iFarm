@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <title>About</title>
+  <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/maps/maps.css'>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/maps/maps-web.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins&display=swap');
+  </style>
+</head>
+
+<body>
+<div id="map-div"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+<script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/services/services-web.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script>
+  const API_KEY = 'DW3MgdJxzRCKxMdQWraz2p4rQtWUG7x9';
+  const APPLICATION_NAME = 'iFarm';
+  const APPLICATION_VERSION = '1.0';
+
+  tt.setProductInfo(APPLICATION_NAME, APPLICATION_VERSION);
+  //Il centro è Firenze
+  const center = {lng: 11.231524538358885, lat: 43.78229157745621};
+
+  const places = [{lng: 9.353001297955878, lat: 45.59922252614358},
+    {lng: 12.778982883406195, lat: 43.21592237200966},
+    {lng: 10.432740671777184, lat: 43.7800357114946},
+    {lng: 10.69444474295525, lat: 44.64803623588471},
+    {lng: 13.918341012231823, lat: 42.55185166142977},
+    {lng: 12.595285752765152, lat: 41.74561259269606},
+    {lng: 9.194965542873403, lat: 39.38755730396681},
+    {lng: 13.722110369836024, lat: 37.961329816721474},
+    {lng: 15.959554356402457, lat: 41.89465671843036},
+    {lng: 8.863266827616993, lat: 45.03592877616764},
+    {lng: 8.960189041114567, lat: 45.4015664739195}];
+
+  const names = ['Agriturismo La Camilla',
+    'Az. Agr. Trinei Stefano',
+    'Az. Agr. La Grotta',
+    'Soc. Agr. Corte del Boiardo',
+    'Soc. Agr. Masseria Erasmi',
+    'Agriturismo Il Cavallino Rosso',
+    'Az. Agr. Cannavera',
+    'Apicoltura Carlo Amodeo',
+    'Az. Agr. Perna Carlo',
+    "L'orto del Po",
+    'Az. Agr. Agrinaviglio a R.L'];
+
+  var map = tt.map({
+    key: API_KEY,
+    container: 'map-div',
+    center: center,
+    zoom: 4.5
+  });
+
+  var popupOffsets = {
+    top: [0, 0],
+    bottom: [0, -40],
+    'bottom-right': [0, -70],
+    'bottom-left': [0, -70],
+    left: [25, -35],
+    right: [-25, -35]
+  }
+
+  for (let i = 0; i < names.length; i++) {
+    var element = document.createElement('div');
+    element.id = 'marker' + i;
+    element.classList.add('marker');
+    var marker = new tt.Marker({element: element}).setLngLat(places[i]).addTo(map);
+    var customPopup = '<div style="display:flex; flex-direction: column; align-items: center;">' +
+            '<img src="src/About/azienda' + i + '.jpg" class="rounded-circle" style="width: 10vw;  height: 10vw;">' +
+            '<div style="height:100%; padding-top:10px; color: #0C492A"><p style="font:16px Poppins" class="text-center"><b>' + names[i] + '</b></p>' + '</div></div>';
+    var popup = new tt.Popup({offset: popupOffsets}).setHTML(customPopup);
+    marker.setPopup(popup);
+  }
+</script>
+</body>
+
+</html>

@@ -374,4 +374,34 @@ html, body {
         align-self: center;
     }
 }
+/* Per la mappa */
+#map-div {
+    width: 75vw;
+    height: 75vh;
+}
 
+.marker {
+    background-image: url('src/About/locationSVG35.svg');
+    width: 35px;
+    height: 35px;
+}
+
+.marker:hover {
+    background-image: url('src/About/locationSVG35_hover.svg');
+}
+
+.mapboxgl-popup-content {
+    padding: 10px;
+    width: fit-content;
+}
+
+.mapboxgl-popup-close-button {
+    color: #0C492A;
+    transform: scale(1.5);
+}
+
+.mapboxgl-popup-close-button:hover {
+    background-color: transparent;
+    transform: scale(2);
+    color: #FDC41F;
+}
