@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*body {
+body {
     overflow: hidden;
-}*/
+}
+#mission-body{
+    overflow: visible;
+}
 html, body {
     height: 100%;
     width: 100%;
