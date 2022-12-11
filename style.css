@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+/*body {
     overflow: hidden;
-}
+}*/
 html, body {
     height: 100%;
     width: 100%;
@@ -231,6 +231,9 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+.card-des .card-body{
+    flex-direction: row;
+}
 .card1{
     grid-area: card1;
 }
@@ -245,6 +248,13 @@ html, body {
 }
 .card5{
     grid-area: card5;
+}
+.card-mob img{
+    transform: scale(0.5);
+}
+.card-des img{
+    transform: scale(0.75);
+    padding-right: 15px;
 }
 
 .timeline-part{
