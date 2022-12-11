@@ -399,6 +399,7 @@ html, body {
 .mapboxgl-popup-close-button {
     color: #0C492A;
     transform: scale(1.5);
+    padding-right: 5px;
 }
 
 .mapboxgl-popup-close-button:hover {
