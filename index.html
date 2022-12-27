@@ -7,16 +7,12 @@
   <title>Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <style>
-    *{
-      color: white;
-    }
-  </style>
 </head>
 
-<body>
-<!--Navbar-->
+<body id="body-home">
 <nav class="navbar navbar-collapse bg-grad sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="src/Logo_ifarm-04 1.svg"></a>
@@ -28,12 +24,12 @@
       <span class="toggler-icon bottom-bar"></span>
     </button>
     <div class="collapse navbar-collapse text-center vh-100" id="navbarNav">
-      <ul class="navbar-nav navbar-nav-scroll">
+      <ul class="navbar-nav navbar-nav-scroll animate__animated">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="mission.html">Mission</a>
+          <a class="nav-link" href="#">Mission</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -47,7 +43,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Blog</a>
@@ -60,222 +56,127 @@
   </div>
 </nav>
 
-<!--Panels home-->
-<div class="container" id="container">
-  <div class="panel" id="panel1">
-    <div class="content">
-      <h1>iFarm</h1>
-    </div>
-    <img src="src/scroll-home.svg">
-  </div>
 
-  <div class="panel" id="panel2">
-    <div class="content">
-      <h1>I nostri ideali</h1>
-      <h2>Sostenibilità e innovazione</h2>
-      <a class="btn btn-primary btn-sm" href="#" role="button">Scopri la
-        mission</a>
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide" id="panel1">
+      <div class="content">
+        <h1>iFarm</h1>
+      </div>
+      <img src="src/scroll-home.svg">
     </div>
-    <img src="src/scroll-home.svg">
-  </div>
-
-  <div class="panel" id="panel3">
-    <div class="content" id=content3>
-      <h1>Scarica l'app</h1>
-      <h2>Per una migliore esperienza utente</h2>
-      <div class="buttons" id="btns-3">
+    <div class="swiper-slide" id="panel2">
+      <div class="content">
+        <h1>I nostri ideali</h1>
+        <h2>Sostenibilità e innovazione</h2>
+        <button class="btn btn-sm rounded-3" href="#" role="button">Scopri la mission</button>
+      </div>
+      <img src="src/scroll-home.svg">
+    </div>
+    <div class="swiper-slide" id="panel3">
+      <div class="content" id=content3>
+        <h1>Scarica l'app</h1>
+        <h2>Per una migliore esperienza utente</h2>
+        <div class="buttons" id="btns-3">
           <img id="btn-3-1" src="src/Badge App Store.svg">
           <img id="btn-3-2" src="src/Badge Google Play.svg">
+        </div>
       </div>
+      <img src="src/scroll-home.svg">
     </div>
-    <img src="src/scroll-home.svg">
+    <div class="swiper-slide" id="panel4">
+      <div class="content" id=content4>
+        <h1>Azienda e cliente</h1>
+        <h2>Interfacce e strumenti personalizzati</h2>
+        <div class="buttons" id="btns-4">
+          <a class="btn btn-sm" id="btn-4-1" href="#" role="button">Per le aziende</a>
+          <a class="btn btn-sm" id="btn-4-2" href="#" role="button">Per i clienti</a>
+        </div>
+      </div>
+      <img src="src/scroll-home.svg" id="scroll4">
+      <img src="src/top_footer.png" id="top-footer">
+    </div>
+
+    <footer class="swiper-slide d-flex flex-column justify-content-between align-items-center mt-0 p-4 border-top" id="footer">
+
+      <img class="pb-3 align-center" src="src/Logo_ifarm_bianco-04 1.svg">
+      <p class="text-center pb-3">iFarm <br>Via Del Borgo, 48 <br> 25463 Firenze - Italia</p>
+      <div class="d-flex pb-4">
+        <img src="src/facebook_icon.svg">
+        <img src="src/instagram_icon.svg">
+        <img src="src/linkedin_icon.svg">
+        <img src="src/youtube_icon.svg">
+      </div>
+      <p>Scarica l’app iFarm</p>
+      <div class="d-flex pb-5">
+        <img src="src/Badge App Store.svg">
+        <img src="src/Badge Google Play.svg">
+      </div>
+      <p class="text-center">Design di Sofia Damaso, Valeria Froio, Michela Oltolini, Claudia Rabaioli, Emma Salvadori, Bianca Santi.
+        A.A. 2022/2023 - Corso di Comunicazione Visiva e Design delle Interfacce</p>
+    </footer>
   </div>
 
-  <div class="panel" id="panel4">
-    <div class="content" id="content4">
-      <h1>Azienda e cliente</h1>
-      <h2>Interfacce e strumenti personalizzati</h2>
-      <div class="buttons" id="btns-4">
-        <a class="btn btn-primary btn-sm" id="btn-4-1" href="#" role="button">Per le aziende</a>
-        <a class="btn btn-primary btn-sm" id="btn-4-2" href="#" role="button">Per i clienti</a>
-      </div>
-    </div>
-    <img id="scroll4" src="src/scroll-home.svg">
-    <img id="top-footer" src="src/top_footer.png">
-  </div>
-  <!--Footer-->
-  <footer class="panel d-flex flex-column justify-content-between align-items-center mt-0 p-4 border-top" id="footer">
-    <img class="pb-3 align-center" src="src/Logo_ifarm_bianco-04 1.svg">
-    <p class="text-center pb-3">iFarm <br>Via Del Borgo, 48 <br> 25463 Firenze - Italia</p>
-    <div class="d-flex pb-4">
-      <img src="src/facebook_icon.svg">
-      <img src="src/instagram_icon.svg">
-      <img src="src/linkedin_icon.svg">
-      <img src="src/youtube_icon.svg">
-    </div>
-    <p>Scarica l’app iFarm</p>
-    <div class="d-flex pb-5">
-      <img src="src/Badge App Store.svg">
-      <img src="src/Badge Google Play.svg">
-    </div>
-    <p class="text-center">Design di Sofia Damaso, Valeria Froio, Michela Oltolini, Claudia Rabaioli, Emma
-      Salvadori,
-      Bianca Santi.
-      A.A. 2022/2023 - Corso di Comunicazione Visiva e Design delle Interfacce</p>
-  </footer>
+  <div class="swiper-pagination"></div>
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
 <script>
-  $('.navbar-collapse').on('show.bs.collapse', function () {
-    $('body').addClass('no-scroll');
+  $('.navbar-collapse').on('show.bs.collapse', function (){
     $('.navbar-collapse').addClass('d-flex');
     $('.navbar-collapse').addClass('justify-content-center');
     $('.navbar-collapse').addClass('align-content-center');
     $('.navbar').removeClass('bg-grad');
     $('.navbar').addClass('bg-green');
+    if($('.navbar-nav').hasClass('animate__fadeOut'))
+      $('.navbar-nav').removeClass('animate__fadeOut');
+    $('.navbar-nav').addClass('animate__fadeIn');
   });
 
   $('.navbar-collapse').on('hidden.bs.collapse', function () {
-    $('body').removeClass('no-scroll');
+    if($('.navbar-nav').hasClass('animate__fadeIn'))
+      $('.navbar-nav').removeClass('animate__fadeIn');
+    $('.navbar-nav').addClass('animate__fadeOut');
     $('.navbar-collapse').removeClass('d-flex');
     $('.navbar-collapse').removeClass('justify-content-center');
     $('.navbar-collapse').removeClass('align-content-center');
     $('.navbar').removeClass('bg-green');
     $('.navbar').addClass('bg-grad');
   });
-</script>
-<script>
 
-  "use strict"; //con ES5 serve per evitare che vengano usate undeclared variables
-  var pnls = document.querySelectorAll('.panel').length,
-          scdir, hold = false;
-
-  function checkVisible(elm) {
-    var rect = elm.getBoundingClientRect();
-    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
-  }
-
-  function _scrollY(obj) {
-    var slength, plength, pan, step = 100,
-            vh = window.innerHeight / 100,
-            vmin = Math.min(window.innerHeight, window.innerWidth) / 100,
-            panel4 = document.getElementById('panel4'),
-            footer = document.getElementById('footer');
-
-    //questi controlli vengono effettuati perchè la funzione viene chiamata sia dal gestore eventi (this === container) che come funzione normale (obj === container)
-    if ((this !== undefined && this.id === 'container') || (obj !== undefined && obj.id === 'container')) {
-      pan = this || obj;
-      plength = parseInt(pan.offsetHeight / vh);
-    }
-    if (pan === undefined) {
-      return;
-    }
-    plength = plength || parseInt(pan.offsetHeight / vmin);
-    slength = parseInt(pan.style.transform.replace('translateY(', ''));
-    if (scdir === 'up' && Math.abs(slength) < (plength - plength / pnls)) {
-      //se è l'ultimo allora ...
-      if(checkVisible(panel4)){
-        step = parseInt(footer.offsetHeight/vh);
-      }
-      if(checkVisible(footer)){
-        step = 0;
-      }
-
-      slength = slength - step;
-    } else if (scdir === 'down' && slength < 0) {
-      if(checkVisible(footer)){
-        step = parseInt(footer.offsetHeight/vh);
-      }
-      slength = slength + step;
-    } /*else if (scdir === 'top') {
-          slength = 0;
-        }*/
-    if (hold === false) {
-      hold = true;
-      pan.style.transform = 'translateY(' + slength + 'vh)';
-      setTimeout(function () {
-        hold = false;
-      }, 1000);
-    }
-  }
-
-  function _swipe(obj) {
-    var swdir,
-            sX,
-            sY,
-            dX,
-            dY,
-            threshold = 100,
-            /*[min distance traveled to be considered swipe]*/
-            slack = 50,
-            /*[max distance allowed at the same time in perpendicular direction]*/
-            alT = 500,
-            /*[max time allowed to travel that distance]*/
-            elT, /*[elapsed time]*/
-            stT; /*[start time]*/
-
-    //serve a comprendere le coordinate di dove ha toccato lo schermo l'utente e lo start time
-    obj.addEventListener('touchstart', function (e) {
-      var tchs = e.changedTouches[0];
-      swdir = 'none';
-      sX = tchs.pageX;
-      sY = tchs.pageY;
-      stT = new Date().getTime();
-    }, false);
-
-    //quando il tocco dell'utente si sposta sullo schermo e serve a evitare che lo user agent effettui l'azione di default se non viene esplicitamente gestito l'evento
-    obj.addEventListener('touchmove', function (e) {
-      e.preventDefault();
-    }, false);
-
-    //quando l'utente ha finito di toccare lo schermo
-    obj.addEventListener('touchend', function (e) {
-      var tchs = e.changedTouches[0];
-      dX = tchs.pageX - sX;
-      dY = tchs.pageY - sY;
-      elT = new Date().getTime() - stT;
-      if (elT <= alT) {
-        if (Math.abs(dX) >= threshold && Math.abs(dY) <= slack) {
-          swdir = (dX < 0) ? 'left' : 'right';
-        } else if (Math.abs(dY) >= threshold && Math.abs(dX) <= slack) {
-          swdir = (dY < 0) ? 'up' : 'down';
-        }
-        if (obj.id === 'container') {
-          if (swdir === 'up') {
-            scdir = swdir;
-            _scrollY(obj);
-          } else if (swdir === 'down' && obj.style.transform !== 'translateY(0)') {
-            scdir = swdir;
-            _scrollY(obj);
-
-          }
-          e.stopPropagation();
-        }
-      }
-    }, false);
-  }
-
-  var container = document.getElementById('container');
-  container.style.transform = 'translateY(0)';
-  container.addEventListener('wheel', function (e) {
-    if (e.deltaY < 0) {
-      scdir = 'down';
-    }
-    if (e.deltaY > 0) {
-      scdir = 'up';
-    }
-    e.stopPropagation();
+  $('.navbar-collapse').on('hide.bs.collapse', function (){
+    if($('.navbar-nav').hasClass('animate__fadeIn'))
+      $('.navbar-nav').removeClass('animate__fadeIn');
+    $('.navbar-nav').addClass('animate__fadeOut');
   });
-  container.addEventListener('wheel', _scrollY);
-  _swipe(container);
+</script>
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
 
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 'auto',
+    speed: 2000,
+    // Optional parameters
+    direction: 'vertical',
+    // Mousewheel scroll
+    mousewheel: {
+      invert: true,
+      tresholdDelta: 200,
+    },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    }
+  });
 </script>
 </body>
+
 </html>
