@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    overflow: hidden;
+
     font-family: 'Poppins', sans-serif;
 }
 #mission-body{
@@ -27,6 +27,11 @@ h1{
 
 #body-home{
     background-color: var(--primary);
+    color: var(--primary);
+    overflow: hidden;
+}
+
+b, h2{
     color: var(--primary);
 }
 
@@ -402,6 +407,7 @@ h1{
     grid-column-start: 1;
     grid-column-end: 1;
     justify-self: center;
+    background-color: transparent;
 }
 
 .txt-leaf{
@@ -433,7 +439,6 @@ h1{
         display: grid;
     }
     .button-leaf img{
-        transform: rotate(90deg);
         grid-row-start: 1;
         grid-row-end: 1;
         grid-column-start: 1;
@@ -476,3 +481,14 @@ h1{
     transform: scale(2);
     color: #FDC41F;
 }
+
+/*App*/
+/*
+@media (min-width: 768px){
+    #download-app{
+        order: 3;
+    }
+    #img-app{
+        order: 2;
+    }
+}*/
