@@ -36,9 +36,10 @@ b, h2{
 
 /*navbar*/
 .navbar{
-    position: absolute;
+    z-index: 100;
     width: 100%;
 }
+
 .navbar-toggler {
     width: 20px;
     height: 20px;
