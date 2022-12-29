@@ -31,7 +31,7 @@ h1{
     overflow: hidden;
 }
 
-b, h2{
+b, h2, h5{
     color: var(--primary);
 }
 
@@ -575,3 +575,92 @@ b, h2{
     height:700px;
 }
 
+/*Shop*/
+#container-shop{
+    margin: 0 auto;
+}
+
+.swiper {
+    width: 100%;
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+#card1{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+#card2{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+#card3{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+#card5,#card5,#card6{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.plus{
+    height: 36px;
+    width: 36px;
+}
+.minus{
+    height: 36px;
+    width: 36px;
+}
+.plus-link:hover{
+    cursor: pointer;
+}
+.minus-link:hover{
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+.icon-experiences1{
+    width: 29px;
+    height: 22px;
+    padding-left: 1vw;
+}
+.icon-experiences2{
+    width: 21px;
+    height: 21px;
+    padding-left: 1vw;
+}
+.icon-experiences3{
+    width: 19px;
+    height: 26px;
+    padding-left: 1vw;
+}
+.price{
+    font-size: 25px;
+}
+.price-container{
+    text-align: center;
+}
+#download{
+    text-align: center
+}
