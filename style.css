@@ -161,6 +161,10 @@ b, h2, h5{
 .swiper {
     width: 100vw;
     height: 100vh;
+    padding: 0 !important;
+}
+.swiper-wrapper{
+    height: 100vh;
 }
 
 .swiper-pagination-bullet {
@@ -183,6 +187,7 @@ b, h2, h5{
 }
 
 .swiper-slide img {
+    width: auto !important;
     justify-self: center;
     align-self:end;
     padding-bottom: 5vw;
