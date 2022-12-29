@@ -492,3 +492,86 @@ b, h2{
         order: 2;
     }
 }*/
+
+/*Blog*/
+.card-body{
+    background-color: #D6FF86;
+}
+.card-body-regular{
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+.card{
+    border-style: none;
+    filter: drop-shadow(0px 3px 5px rgba(12, 73, 42, 0.25));
+    padding: 0;
+}
+
+.card-img-top-regular{
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+#container-mini-articles{
+    display: grid;
+    grid-template-areas: "img1-mini text1-mini" "img2-mini text2-mini" "img3-mini text3-mini" "img4-mini text4-mini" "img5-mini text5-mini";
+    grid-template-columns: 40% 60%;
+    grid-row-gap: 3vw;
+    grid-column-gap: 3vw;
+}
+
+#img-card1-mini{
+    grid-area: img1-mini;
+    background-image: url('src/Blog/torta.jpg');
+}
+#img-card2-mini{
+    grid-area: img2-mini;
+    background-image: url('src/Blog/torta.jpg');
+}
+#img-card3-mini{
+    grid-area: img3-mini;
+    background-image: url('src/Blog/torta.jpg');
+}
+#img-card4-mini{
+    grid-area: img4-mini;
+    background-image: url('src/Blog/torta.jpg');
+}
+#img-card5-mini{
+    grid-area: img5-mini;
+    background-image: url('src/Blog/torta.jpg');
+}
+#text-card1-mini{
+    grid-area: text1-mini;
+
+}
+#text-card2-mini{
+    grid-area: text2-mini;
+}
+#text-card3-mini{
+    grid-area: text3-mini;
+}
+#text-card4-mini{
+    grid-area: text4-mini;
+}
+#text-card5-mini{
+    grid-area: text5-mini;
+}
+
+.square {
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(0px 3px 5px rgba(12, 73, 42, 0.25));
+}
+.btn-primary{
+    background-color: var(--primary);
+    color: white;
+}
+.btn-primary:hover{
+    background-color: #00A05E;
+}
+.card-articles{
+    width: 414px;
+    height:700px;
+}
+
