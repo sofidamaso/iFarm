@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-collapse bg-grad sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="src/Logo_ifarm-04 1.svg"></a>
+    <button class="navbar-toggler collapsed d-flex flex-column justify-content-around" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="toggler-icon top-bar"></span>
+      <span class="toggler-icon middle-bar"></span>
+      <span class="toggler-icon bottom-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse text-center vh-100" id="navbarNav">
+      <ul class="navbar-nav navbar-nav-scroll animate__animated">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mission.html">Mission</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="app.html" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">
+            iFarm App
+            <img src="src/dropdown-menu-arrow.svg">
+          </a>
+          <ul class="dropdown-menu text-center">
+            <li><a class="dropdown-item" href="#">Azienda</a></li>
+            <li><a class="dropdown-item" href="#">Utente</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shop</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="panel1">
+  <div class="content">
+    <h1>Blog</h1>
+  </div>
+</div>
+<div class="container">
+
+  <div class="row mt-3">
+    <!--card1-->
+    <div class="col">
+        <div class="card rounded-4 mt-4 card-articles">
+          <img class="card-img-top card-img-top-regular rounded-4" src="src/Blog/torta.jpg" alt="Card image cap">
+          <div class="card-body rounded-4 card-body-regular">
+            <div class="d-flex mb-3">
+              <div class="me-auto p-1">Milano, 25/11/2021</div>
+              <div class="p-1">Attualità</div>
+              <div class="p-1"><img src="src/Blog/blog-card-icon-tag.svg"></div>
+            </div>
+            <h5 class="card-title">Agenda 2030</h5>
+            <p class="card-text">L’Agenda 2030 per lo Sviluppo Sostenibile è un programma d’azione per le persone,
+              il pianeta e la prosperità sottoscritto nel settembre 2015 dai governi dei 193 Paesi membri dell’ONU.</p>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-primary" href="#" role="button">Leggi tutto</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!--card2-->
+    <div class="col">
+      <div class="card rounded-4 mt-4 card-articles">
+        <img class="card-img-top card-img-top-regular rounded-4" src="src/Blog/torta.jpg" alt="Card image cap">
+        <div class="card-body rounded-4 card-body-regular">
+          <div class="d-flex mb-3">
+            <div class="me-auto p-1">Milano, 28/11/2021</div>
+            <div class="p-1">Attualità</div>
+            <div class="p-1"><img src="src/Blog/blog-card-icon-tag.svg"></div>
+          </div>
+          <h5 class="card-title">Agricoltura 4.0</h5>
+          <p class="card-text">L’Agricoltura 4.0 fa riferimento all’evoluzione dell’agricoltura,
+            con l’utilizzo di tecnologie dell’Industria 4.0 al settore dell’agricoltura attraverso procedimenti innovativi.</p>
+          <div class="d-flex justify-content-center">
+            <a class="btn btn-primary" href="#" role="button">Leggi tutto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--card3-->
+    <div class="col">
+      <div class="card rounded-4 mt-4 card-articles">
+        <img class="card-img-top card-img-top-regular rounded-4" src="src/Blog/torta.jpg" alt="Card image cap">
+        <div class="card-body rounded-4 card-body-regular">
+          <div class="d-flex mb-3">
+            <div class="me-auto p-1">Milano, 30/11/2021</div>
+            <div class="p-1">Attualità</div>
+            <div class="p-1"><img src="src/Blog/blog-card-icon-tag.svg"></div>
+          </div>
+          <h5 class="card-title">Agrovoltaico</h5>
+          <p class="card-text">L’agrovoltaico è una delle applicazioni più promettenti per accelerare lo sviluppo delle energie rinnovabili.
+            Infatti, sfrutta i terreni agricoli per produrre energia solare, ma senza consumare suolo.</p>
+          <div class="d-flex justify-content-center">
+            <a class="btn btn-primary" href="#" role="button">Leggi tutto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+
+  <h2 class="mt-5 ml-3">Elenco degli articoli</h2>
+  <!--card mini body-->
+  <div class="m-4" id="container-mini-articles">
+    <div class="card-img-top rounded-4 square" id="img-card1-mini"></div>
+    <div class="card rounded-4" id="text-card1-mini">
+      <div class="card-body rounded-4">
+        <div class="d-flex mb-3">
+          <div class="me-auto p-1">Milano, 25/11/2021</div>
+          <div class="p-1">Attualità</div>
+          <div class="p-1"><img src="src/Blog/blog-card-icon-tag.svg"></div>
+        </div>
+        <h5>Agenda 2030</h5>
+        <p class="card-text">L’Agenda 2030 per lo Sviluppo Sostenibile è un programma d’azione per le persone,
+          il pianeta e la prosperità sottoscri...</p>
+      </div>
+    </div>
+    <!-- prova con col e row
+<div class="m-4" id="container-mini-articles">
+  <div class="card-img-top rounded-4 square" id="img-card1-mini"></div>
+  <div class="card rounded-4" id="text-card1-mini">
+    <div class="card-body rounded-4">
+      <div class="d-flex mb-3">
+        <div class="row">
+          <div class="me-auto p-1 col">Milano, 25/11/2021</div>
+          <div class="p-1 col">Attualità</div>
+        </div>
+        <div class="row">
+          <h5>Agenda 2030</h5>
+          <div class="p-1"><img src="src/Blog/blog-card-icon-tag.svg"></div>
+        </div>
+      </div>
+      <p class="card-text">L’Agenda 2030 per lo Sviluppo Sostenibile è un programma d’azione per le persone,
+        il pianeta e la prosperità sottoscri...</p>
+    </div>
+  </div> -->
+
+    <div class="card-img-top rounded-4 square" id="img-card2-mini"></div>
+    <div class="card rounded-4" id="text-card2-mini">
+      <div class="card-body rounded-4">
+        <div class="d-flex mb-3">
+          <div class="me-auto p-1">Milano, 28/11/2021</div>
+          <div class="p-1">Attualità</div>
+          <div class="p-1"><img src="src/Blog/blog-card-icon-tag.svg"></div>
+        </div>
+        <h5>Agricoltura 4.0</h5>
+        <p class="card-text">L’Agricoltura 4.0 fa riferimento all’evoluzione dell’agricoltura, con l’utilizzo
+          di tecnologie dell’Industria 4.0 al settore dell’agrico...</p>
+      </div>
+    </div>
+
+    <div class="card-img-top rounded-4 square" id="img-card3-mini"></div>
+    <div class="card rounded-4" id="text-card3-mini">
+      <div class="card-body rounded-4">
+        <div class="d-flex mb-3">
+          <div class="me-auto p-1">Milano, 30/11/2021</div>
+          <div class="p-1">Attualità</div>
+          <div class="p-1"><img src="src/Blog/blog-card-icon-tag.svg"></div>
+        </div>
+        <h5>Agrovoltaico</h5>
+        <p class="card-text">L’agrovoltaico è una delle applicazioni più
+          promettenti per accelerare lo sviluppo delle energie rinnovabili. Infatti...</p>
+      </div>
+    </div>
+
+    <div class="card-img-top rounded-4 square" id="img-card4-mini"></div>
+    <div class="card rounded-4" id="text-card4-mini">
+      <div class="card-body rounded-4">
+        <div class="d-flex mb-3">
+          <div class="me-auto p-1">Milano, 04/12/2021</div>
+          <div class="p-1">Attualità</div>
+          <div class="p-1"><img src="src/Blog/blog-card-icon-tag.svg"></div>
+        </div>
+        <h5>Droni spruzzatori</h5>
+        <p class="card-text">I droni sono ora strumenti consolidati nel settore agricolo,
+          che aumentano la produttività delle aziende agricole...
+        </p>
+      </div>
+    </div>
+
+    <div class="card-img-top rounded-4 square" id="img-card5-mini"></div>
+    <div class="card rounded-4" id="text-card5-mini">
+      <div class="card-body rounded-4">
+        <div class="d-flex mb-3">
+          <div class="me-auto p-1">Milano, 07/12/2021</div>
+          <div class="p-1">Attualità</div>
+          <div class="p-1"><img src="src/Blog/blog-card-icon-tag.svg"></div>
+        </div>
+        <h5>Stazione meteo</h5>
+        <p class="card-text">Le stazioni agrometeo, come dice il nome stesso,
+          sono pensate appositamente per l’agricoltura. Misurano dati mete...</p>
+      </div>
+    </div>
+  </div>
+
+<img id="top-footer" src="src/top_footer.png">
+<!--Footer-->
+<footer class="panel d-flex flex-column justify-content-between align-items-center mt-0 p-4 border-top" id="footer">
+  <img class="pb-3 align-center" src="src/Logo_ifarm_bianco-04 1.svg">
+  <p class="text-center pb-3">iFarm <br>Via Del Borgo, 48 <br> 25463 Firenze - Italia</p>
+  <div class="d-flex pb-4">
+    <img src="src/facebook_icon.svg">
+    <img src="src/instagram_icon.svg">
+    <img src="src/linkedin_icon.svg">
+    <img src="src/youtube_icon.svg">
+  </div>
+  <p>Scarica l’app iFarm</p>
+  <div class="d-flex pb-5">
+    <img src="src/Badge App Store.svg">
+    <img src="src/Badge Google Play.svg">
+  </div>
+  <p class="text-center">Design di Sofia Damaso, Valeria Froio, Michela Oltolini, Claudia Rabaioli, Emma
+    Salvadori,
+    Bianca Santi.
+    A.A. 2022/2023 - Corso di Comunicazione Visiva e Design delle Interfacce</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script>
+  $('.navbar-collapse').on('show.bs.collapse', function (){
+    $('.navbar-collapse').addClass('d-flex');
+    $('.navbar-collapse').addClass('justify-content-center');
+    $('.navbar-collapse').addClass('align-content-center');
+    $('.navbar').removeClass('bg-grad');
+    $('.navbar').addClass('bg-green');
+    if($('.navbar-nav').hasClass('animate__fadeOut'))
+      $('.navbar-nav').removeClass('animate__fadeOut');
+    $('.navbar-nav').addClass('animate__fadeIn');
+  });
+
+  $('.navbar-collapse').on('hidden.bs.collapse', function () {
+    if($('.navbar-nav').hasClass('animate__fadeIn'))
+      $('.navbar-nav').removeClass('animate__fadeIn');
+    $('.navbar-nav').addClass('animate__fadeOut');
+    $('.navbar-collapse').removeClass('d-flex');
+    $('.navbar-collapse').removeClass('justify-content-center');
+    $('.navbar-collapse').removeClass('align-content-center');
+    $('.navbar').removeClass('bg-green');
+    $('.navbar').addClass('bg-grad');
+  });
+
+  $('.navbar-collapse').on('hide.bs.collapse', function (){
+    if($('.navbar-nav').hasClass('animate__fadeIn'))
+      $('.navbar-nav').removeClass('animate__fadeIn');
+    $('.navbar-nav').addClass('animate__fadeOut');
+  });
+</script>
+</body>
+</html>
