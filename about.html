@@ -15,14 +15,160 @@
 </head>
 
 <body>
-<div id="map-div"></div>
+<!--Navbar-->
+<nav class="navbar navbar-collapse bg-grad sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="src/Logo_ifarm-04 1.svg"></a>
+    <button class="navbar-toggler collapsed d-flex flex-column justify-content-around" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="toggler-icon top-bar"></span>
+      <span class="toggler-icon middle-bar"></span>
+      <span class="toggler-icon bottom-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse text-center vh-100" id="navbarNav">
+      <ul class="navbar-nav navbar-nav-scroll animate__animated">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mission.html">Mission</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="app.html" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">
+            iFarm App
+            <img src="src/dropdown-menu-arrow.svg">
+          </a>
+          <ul class="dropdown-menu text-center">
+            <li><a class="dropdown-item" href="#">Azienda</a></li>
+            <li><a class="dropdown-item" href="#">Utente</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="app-cliente.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="app-azienda.html">Shop</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="panel1">
+  <div class="content">
+    <h1>I nostri ideali</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row offset-sm-1 mt-3">
+    <div class="col-sm-5">
+      <h2>Com'è nata iFarm</h2>
+      <p>Il progetto iFarm nasce <b>nel 2022 a Milano</b> dall’idea di sei studentesse dell’Università Milano Bicocca. La città di Milano non offre lo spazio necessario per poter fruire appieno della natura. Da qui nasce l’idea di mettere a disposizione gli spazi verdi già esistenti.
+      </p>
+      <div class="col-sm-2">
+        <a href="#" class="btn btn-info" role="button">Blog</a>
+      </div>
+    </div>
+    <div class="col-sm-4 offset-sm-1">
+      <img src="src/Home/home-iFarm.svg">
+    </div>
+  </div>
+  <div class="row offset-sm-1 mt-5">
+    <h2>La storia in breve</h2>
+  </div>
+  <div class="row offset-sm-1">
+    <div class="col-sm-5">
+      <p>L’amore per la natura e le esperienze che essa offre ci ha spinte a cercare diversi agricoltori disposti ad ospitare persone alla ricerca di un contatto con la natura, alle quali mancavano però gli strumenti e uno spazio adeguato per farlo. Inizialmente il nostro progetto è stato sviluppato sulla città di Milano e nel suo hinterland.
+      </p>
+    </div>
+    <div class="col-sm-5">
+      <p>Le persone potevano usufruire dei servizi tramite il nostro sito; successivamente, visto il successo e la maggiore crescita di richieste da parte degli utenti, abbiamo deciso di <b>espanderci in tutta Italia</b> e di <b>sviluppare un'applicazione</b>, al fine di creare un canale di comunicazione più pratico e veloce.
+      </p>
+    </div>
+  </div>
+  <div class="row offset-sm-1 mt-5">
+    <h2>Il team</h2>
+  </div>
+  <div class="row offset-sm-1 mt-5">
+    Team cards
+  </div>
+  <div class="row offset-sm-1 mt-5">
+    <div class="col-sm-5">
+      <h2>Aziende & Partner</h2>
+      <p>Puoi consultare le varie aziende con le quali collaboriamo attraverso la pratica mappa che trovi qui sotto.
+        Scegli l’azienda e lasciati trasportare nel fantastico mondo della natura!</p>
+    </div>
+    <div class="col-sm-5 rounded-4">
+      <!--map-->
+      <div class="rounded-4" id="map-div"></div>
+    </div>
+  </div>
+</div>
+
+
+<img id="top-footer" src="src/top_footer.png">
+<!--Footer-->
+<footer class="panel d-flex flex-column justify-content-between align-items-center mt-0 p-4 border-top" id="footer">
+  <img class="pb-3 align-center" src="src/Logo_ifarm_bianco-04 1.svg">
+  <p class="text-center pb-3">iFarm <br>Via Del Borgo, 48 <br> 25463 Firenze - Italia</p>
+  <div class="d-flex pb-4">
+    <img src="src/facebook_icon.svg">
+    <img src="src/instagram_icon.svg">
+    <img src="src/linkedin_icon.svg">
+    <img src="src/youtube_icon.svg">
+  </div>
+  <p>Scarica l’app iFarm</p>
+  <div class="d-flex pb-5">
+    <img src="src/Badge App Store.svg">
+    <img src="src/Badge Google Play.svg">
+  </div>
+  <p class="text-center">Design di Sofia Damaso, Valeria Froio, Michela Oltolini, Claudia Rabaioli, Emma
+    Salvadori,
+    Bianca Santi.
+    A.A. 2022/2023 - Corso di Comunicazione Visiva e Design delle Interfacce</p>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
-<script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/services/services-web.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+<script>
+  $('.navbar-collapse').on('show.bs.collapse', function (){
+    $('.navbar-collapse').addClass('d-flex');
+    $('.navbar-collapse').addClass('justify-content-center');
+    $('.navbar-collapse').addClass('align-content-center');
+    $('.navbar').removeClass('bg-grad');
+    $('.navbar').addClass('bg-green');
+    if($('.navbar-nav').hasClass('animate__fadeOut'))
+      $('.navbar-nav').removeClass('animate__fadeOut');
+    $('.navbar-nav').addClass('animate__fadeIn');
+  });
+
+  $('.navbar-collapse').on('hidden.bs.collapse', function () {
+    if($('.navbar-nav').hasClass('animate__fadeIn'))
+      $('.navbar-nav').removeClass('animate__fadeIn');
+    $('.navbar-nav').addClass('animate__fadeOut');
+    $('.navbar-collapse').removeClass('d-flex');
+    $('.navbar-collapse').removeClass('justify-content-center');
+    $('.navbar-collapse').removeClass('align-content-center');
+    $('.navbar').removeClass('bg-green');
+    $('.navbar').addClass('bg-grad');
+  });
+
+  $('.navbar-collapse').on('hide.bs.collapse', function (){
+    if($('.navbar-nav').hasClass('animate__fadeIn'))
+      $('.navbar-nav').removeClass('animate__fadeIn');
+    $('.navbar-nav').addClass('animate__fadeOut');
+  });
+</script>
+<script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/services/services-web.min.js"></script>
 <script>
   const API_KEY = 'DW3MgdJxzRCKxMdQWraz2p4rQtWUG7x9';
   const APPLICATION_NAME = 'iFarm';

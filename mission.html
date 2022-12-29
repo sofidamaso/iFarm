@@ -13,8 +13,76 @@
 </head>
 
 <body id="mission-body">
+<!--Navbar-->
+<nav class="navbar navbar-collapse bg-grad sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="src/Logo_ifarm-04 1.svg"></a>
+        <button class="navbar-toggler collapsed d-flex flex-column justify-content-around" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center vh-100" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-scroll animate__animated">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mission.html">Mission</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="app.html" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        iFarm App
+                        <img src="src/dropdown-menu-arrow.svg">
+                    </a>
+                    <ul class="dropdown-menu text-center">
+                        <li><a class="dropdown-item" href="#">Azienda</a></li>
+                        <li><a class="dropdown-item" href="#">Utente</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="app-cliente.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="app-azienda.html">Shop</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="panel1">
+    <div class="content">
+        <h1>I nostri ideali</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-sm-5 offset-sm-1">
+            <h2>Il progetto iFarm</h2>
+            <p>iFarm è un <b>progetto innovativo</b> che ha l’obiettivo di intersecare natura e tecnologie moderne. L’intersezione tra i due mondi deriva dall’utilizzo di tecnologie che hanno come obiettivo quello di sostenere e alleggerire il lavoro degli agricoltori. iFarm vuole creare un ponte tra le aziende agricole e tutti coloro che hanno il desiderio di avvicinarsi al mondo della natura sperimentando in prima persona la vita del contadino.
+            </p>
+            <p>È possibile per l’utente contribuire tramite delle donazioni alle aziende o tramite l’acquisto di esperienze da svolgere nell’azienda agricola da loro selezionata. Le donazioni alle aziende possono essere monitorate sia dall’utente che dall’agricoltore tramite una timeline che mostra gli obiettivi sbloccati al raggiungimento di un determinato livello di donazioni. I nuovi traguardi raggiunti consentono alle aziende di ricevere nuove tecnologie da inserire nei loro terreni.
+            </p>
+        </div>
+        <div class="col-sm-4 offset-sm-1">
+            <img src="src/Home/home-iFarm.svg">
+        </div>
+    </div>
+</div>
+<div class="row offset-sm-1">
+    <h2>Una timeline sostenibile</h2>
+</div>
 <!--timeline mobile-->
 <div class="container d-md-none" id="container-mob">
+
     <div class="timeline-part timeline-part1">
         <div class="line line-mob"></div>
         <!--<div class="point point-mob"></div>-->
@@ -178,6 +246,62 @@
     </div>
 </div>
 
+<img id="top-footer" src="src/top_footer.png">
+<!--Footer-->
+<footer class="panel d-flex flex-column justify-content-between align-items-center mt-0 p-4 border-top" id="footer">
+    <img class="pb-3 align-center" src="src/Logo_ifarm_bianco-04 1.svg">
+    <p class="text-center pb-3">iFarm <br>Via Del Borgo, 48 <br> 25463 Firenze - Italia</p>
+    <div class="d-flex pb-4">
+        <img src="src/facebook_icon.svg">
+        <img src="src/instagram_icon.svg">
+        <img src="src/linkedin_icon.svg">
+        <img src="src/youtube_icon.svg">
+    </div>
+    <p>Scarica l’app iFarm</p>
+    <div class="d-flex pb-5">
+        <img src="src/Badge App Store.svg">
+        <img src="src/Badge Google Play.svg">
+    </div>
+    <p class="text-center">Design di Sofia Damaso, Valeria Froio, Michela Oltolini, Claudia Rabaioli, Emma
+        Salvadori,
+        Bianca Santi.
+        A.A. 2022/2023 - Corso di Comunicazione Visiva e Design delle Interfacce</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script>
+    $('.navbar-collapse').on('show.bs.collapse', function (){
+        $('.navbar-collapse').addClass('d-flex');
+        $('.navbar-collapse').addClass('justify-content-center');
+        $('.navbar-collapse').addClass('align-content-center');
+        $('.navbar').removeClass('bg-grad');
+        $('.navbar').addClass('bg-green');
+        if($('.navbar-nav').hasClass('animate__fadeOut'))
+            $('.navbar-nav').removeClass('animate__fadeOut');
+        $('.navbar-nav').addClass('animate__fadeIn');
+    });
+
+    $('.navbar-collapse').on('hidden.bs.collapse', function () {
+        if($('.navbar-nav').hasClass('animate__fadeIn'))
+            $('.navbar-nav').removeClass('animate__fadeIn');
+        $('.navbar-nav').addClass('animate__fadeOut');
+        $('.navbar-collapse').removeClass('d-flex');
+        $('.navbar-collapse').removeClass('justify-content-center');
+        $('.navbar-collapse').removeClass('align-content-center');
+        $('.navbar').removeClass('bg-green');
+        $('.navbar').addClass('bg-grad');
+    });
+
+    $('.navbar-collapse').on('hide.bs.collapse', function (){
+        if($('.navbar-nav').hasClass('animate__fadeIn'))
+            $('.navbar-nav').removeClass('animate__fadeIn');
+        $('.navbar-nav').addClass('animate__fadeOut');
+    });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

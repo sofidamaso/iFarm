@@ -8,9 +8,7 @@ body {
 
     font-family: 'Poppins', sans-serif;
 }
-#mission-body{
-    overflow: visible;
-}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -34,6 +32,7 @@ h1{
 b, h2{
     color: var(--primary);
 }
+
 
 /*navbar*/
 .navbar{
