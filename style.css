@@ -597,25 +597,7 @@ b, h2, h5{
     padding-bottom: 0;
 }
 
-#card1{
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 1;
-}
-#card2{
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 1;
-}
-#card3{
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 1;
-}
-#card5,#card5,#card6{
+#card1,#card2,#card3,#card5,#card5,#card6{
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 1;
