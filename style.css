@@ -187,10 +187,13 @@ b, h2, h5{
 }
 
 .swiper-slide img {
-    width: auto !important;
+    /*width: auto !important;*/
     justify-self: center;
     align-self:end;
     padding-bottom: 5vw;
+}
+.scroll{
+    width: auto !important;
 }
 .content{
     align-self: end;
@@ -649,5 +652,16 @@ b, h2, h5{
     text-align: center;
 }
 #download{
-    text-align: center
+    text-align: center;
+    margin-top: 2vw;
+}
+/*Articoli*/
+.header-articles{
+    text-align: center;
+    margin-top: 2vw;
+}
+.two-elements{
+    display: flex;
+    flex-direction: row;
+    color: var(--primary);
 }
