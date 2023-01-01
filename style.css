@@ -187,7 +187,7 @@ b, h2, h5{
 }
 
 .swiper-slide img {
-    width: auto !important;
+    /*width: auto !important;*/
     justify-self: center;
     align-self:end;
     padding-bottom: 5vw;
@@ -599,8 +599,11 @@ b, h2, h5{
 
 .swiper-slide img {
     display: block;
-    width: 100%;
+    /*width: 100%;*/
     padding-bottom: 0;
+}
+.scroll-icon{
+    width: auto !important;
 }
 
 #card1,#card2,#card3,#card5,#card5,#card6{
@@ -651,3 +654,4 @@ b, h2, h5{
 #download{
     text-align: center
 }
+
