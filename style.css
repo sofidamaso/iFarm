@@ -281,13 +281,19 @@ b, h2, h5{
 /*Mission*/
 #container-des{
     display: grid;
-    grid-template-areas: "card1 . card3 . card5 ." "timeline1 timeline2 timeline3 timeline4 timeline5 timeline-end" ". card2 . card4 . .";
+    grid-template-areas: "card1 . card3 . card5" "timeline timeline timeline timeline timeline" ". card2 . card4 .";
 }
+#timeline-des{
+    display: grid;
+    grid-area: timeline;
+}
+
 .card{
     border-style: none;
 }
 .card-des{
     width:auto;
+    filter: none !important;
 }
 .card-body{
     top: 0;
@@ -296,9 +302,6 @@ b, h2, h5{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.card-des .card-body{
-    flex-direction: row;
 }
 .card1{
     grid-area: card1;
@@ -378,16 +381,28 @@ b, h2, h5{
 #line-end-des{
     margin-right: 2vw;
 }
-
+/*
 #container-mob{
     display: grid;
-    grid-template-areas: "timeline1 card1" "timeline2 card2" "timeline3 card3" "timeline4 card4" "timeline5 card5" "timeline-end ." ;
+    grid-template-areas: "timeline-mob cards" ;
     grid-column-gap: 3vw;
+}*/
+#timeline-mob{
+    display: grid;
+    grid-area: timeline-mob;
+    justify-content: space-around;
+    align-content: space-between;
+}
+#cards-mob{
+    grid-area: cards;
 }
 .card-mob{
     border-bottom-left-radius: 0px !important;
     height: auto;
     margin-bottom: 3vw;
+}
+.card-mob .card-body{
+    background-color: transparent;
 }
 .line-mob{
     width: 8px;
@@ -413,6 +428,20 @@ b, h2, h5{
     justify-self: center;
     background-color: transparent;
 }
+.button-leaf:hover{
+    background-color: transparent;
+}
+
+.buttons-leaf{
+    align-self: center;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    justify-self: center;
+    background-color: transparent;
+    z-index: 1;
+}
 
 .txt-leaf{
     font-size: 20px;
@@ -430,6 +459,7 @@ b, h2, h5{
 
 .card-des .card-body{
     flex: none;
+    background-color: transparent;
 }
 .btn{
     --bs-btn-border-width: 0;
