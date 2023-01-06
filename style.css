@@ -403,6 +403,8 @@ b, h2, h5{
 }
 .card-mob .card-body{
     background-color: transparent;
+    width: 100%;
+    padding: 0;
 }
 .line-mob{
     width: 8px;
@@ -433,7 +435,7 @@ b, h2, h5{
 }
 
 .buttons-leaf{
-    align-self: center;
+    /*align-self: center;*/
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 1;
