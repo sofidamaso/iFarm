@@ -528,9 +528,11 @@ b, h2, h5{
 }*/
 
 /*Blog*/
-.card-body{
-    background-color: #D6FF86;
+.card-articles .card-body,.card-mini-articles .card-body{
+    background-color: var(--secondary);
+    align-items: unset;
 }
+
 .card-body-regular{
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
@@ -545,7 +547,6 @@ b, h2, h5{
     border-bottom-right-radius: 0 !important;
 }
 #container-mini-articles{
-    display: grid;
     grid-template-areas: "img1-mini text1-mini" "img2-mini text2-mini" "img3-mini text3-mini" "img4-mini text4-mini" "img5-mini text5-mini";
     /*grid-template-columns: 40% 60%;*/
     grid-template-columns: 25% 60%;
@@ -554,41 +555,12 @@ b, h2, h5{
     justify-content: center;
 }
 
-#img-card1-mini{
-    grid-area: img1-mini;
-    background-image: url('src/Blog/torta.jpg');
+.img-card-mini{
+    height: 100%;
 }
-#img-card2-mini{
-    grid-area: img2-mini;
-    background-image: url('src/Blog/torta.jpg');
-}
-#img-card3-mini{
-    grid-area: img3-mini;
-    background-image: url('src/Blog/torta.jpg');
-}
-#img-card4-mini{
-    grid-area: img4-mini;
-    background-image: url('src/Blog/torta.jpg');
-}
-#img-card5-mini{
-    grid-area: img5-mini;
-    background-image: url('src/Blog/torta.jpg');
-}
-#text-card1-mini{
-    grid-area: text1-mini;
 
-}
-#text-card2-mini{
-    grid-area: text2-mini;
-}
-#text-card3-mini{
-    grid-area: text3-mini;
-}
-#text-card4-mini{
-    grid-area: text4-mini;
-}
-#text-card5-mini{
-    grid-area: text5-mini;
+.text-card-mini{
+    height: 100%;
 }
 
 .square {
@@ -606,7 +578,6 @@ b, h2, h5{
 }
 .card-articles{
     width: 414px;
-    height:700px;
 }
 
 /*Shop*/
