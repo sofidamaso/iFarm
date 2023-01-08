@@ -522,15 +522,6 @@ b, h2, h5{
 }
 
 /*App*/
-/*
-@media (min-width: 768px){
-    #download-app{
-        order: 3;
-    }
-    #img-app{
-        order: 2;
-    }
-}*/
 
 /*Blog*/
 .card-articles .card-body,.card-mini-articles .card-body{
