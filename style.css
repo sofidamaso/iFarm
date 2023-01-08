@@ -614,7 +614,7 @@ b, h2, h5{
     grid-column-start: 1;
     grid-column-end: 1;
 }
-
+/*
 .plus{
     height: 36px;
     width: 36px;
@@ -622,7 +622,7 @@ b, h2, h5{
 .minus{
     height: 36px;
     width: 36px;
-}
+} */
 .plus-link:hover{
     cursor: pointer;
 }
@@ -656,6 +656,9 @@ b, h2, h5{
 #download{
     text-align: center;
     margin-top: 2vw;
+}
+.card-experience .d-flex{
+    column-gap: 1vw;
 }
 /*Articoli*/
 .header-articles{
