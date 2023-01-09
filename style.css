@@ -477,6 +477,7 @@ b, h2, h5{
     grid-column-end: 1;
     justify-self: center;
     margin: 0;
+    line-height: 110%;
 }
 
 .card-des .card-body{
