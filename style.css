@@ -30,10 +30,10 @@ h1, .navbar{
 p{
     color: var(--text-color);
 }
-/*
+
 b, h2, h5{
     color: var(--primary);
-}*/
+}
 
 
 /*navbar*/
@@ -162,12 +162,15 @@ b, h2, h5{
 /*Footer*/
 #footer{
     background-color: var(--primary);
-    color: white;
+
     height: fit-content !important;
     border-top: none !important;
 }
 #footer img{
     align-self: center;
+}
+#footer p{
+    color: white !important;
 }
 
 #icons > svg{
