@@ -694,13 +694,5 @@ b, h2, h5{
     column-gap: 1vw;
 }
 /*Articoli*/
-.header-articles{
-    text-align: center;
-    margin-top: 2vw;
-}
-.two-elements {
-    display: flex;
-    flex-direction: row;
-    color: var(--primary);
-}
+
 
