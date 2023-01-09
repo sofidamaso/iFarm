@@ -296,9 +296,6 @@ b, h2, h5{
 }
 
 /*Mission*/
-#panel-mission{
-
-}
 #container-des{
     display: grid;
     grid-template-areas: "card1 . card3 . card5" "timeline timeline timeline timeline timeline" ". card2 . card4 .";
@@ -401,12 +398,12 @@ b, h2, h5{
 #line-end-des{
     margin-right: 2vw;
 }
-/*
-#container-mob{
-    display: grid;
-    grid-template-areas: "timeline-mob cards" ;
-    grid-column-gap: 3vw;
-}*/
+    /*
+    #container-mob{
+        display: grid;
+        grid-template-areas: "timeline-mob cards" ;
+        grid-column-gap: 3vw;
+    }*/
 #timeline-mob{
     display: grid;
     grid-area: timeline-mob;
