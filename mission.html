@@ -37,10 +37,10 @@
         <div class="collapse navbar-collapse text-center vh-100" id="navbarNav">
             <ul class="navbar-nav navbar-nav-scroll animate__animated">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="mission.html">Mission</a>
+                    <a class="nav-link active" href="mission.html">Mission</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="app.html" role="button" data-bs-toggle="dropdown"
@@ -339,6 +339,14 @@
             $('.navbar-nav').removeClass('animate__fadeIn');
         $('.navbar-nav').addClass('animate__fadeOut');
     });
+
+    $('.timeline-part-des img').hover(
+        function () {
+            $(this).replaceWith("<img src= 'src/Mission/foglia-timeline-hover.svg'>");
+        }, function () {
+            $(this).replaceWith("<img src= 'src/Mission/foglia-timeline.svg'>");
+        });
+
 </script>
 <script>
     $('document').ready(function (){
