@@ -42,6 +42,13 @@ b, h2, h5{
     width: 100%;
 }
 
+.dropdown{
+    white-space: nowrap;
+}
+.dropdown-toggle, .dropdown .nav-link{
+    display: inline-block;
+}
+
 .navbar-toggler {
     width: 20px;
     height: 20px;
