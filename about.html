@@ -80,12 +80,12 @@
 </div>
 
 <div class="container">
-  <div class="row offset-sm-1 mt-3">
-    <div class="col-sm-5">
+  <div class="row offset-sm-1 mt-5">
+    <div class="col-sm-5 mt-3">
       <h2>Com'e&#768; nata iFarm</h2>
       <p>Il progetto iFarm nasce <b>nel 2022 a Milano</b> dall'idea di sei studentesse dell'Universita&#768; Milano Bicocca. La citta&#768; di Milano non offre lo spazio necessario per poter fruire appieno della natura. Da qui nasce l'idea di mettere a disposizione gli spazi verdi gia&#768; esistenti.
       </p>
-      <div class="col-sm-2">
+      <div class="col-sm-2 mt-3">
         <a href="blog.html" class="btn btn-info" role="button">Blog</a>
       </div>
     </div>
@@ -96,7 +96,7 @@
   <div class="row offset-sm-1 mt-5">
     <h2>La storia in breve</h2>
   </div>
-  <div class="row offset-sm-1">
+  <div class="row offset-sm-1 mt-3">
     <div class="col-sm-5">
       <p>L'amore per la natura e le esperienze che essa offre ci ha spinte a cercare diversi agricoltori disposti ad ospitare persone alla ricerca di un contatto con la natura, alle quali mancavano pero&#768; gli strumenti e uno spazio adeguato per farlo. Inizialmente il nostro progetto e&#768; stato sviluppato sulla citta&#768; di Milano e nel suo hinterland.
       </p>
@@ -371,7 +371,7 @@
   </div>
 
   <div class="row offset-sm-1 mt-5">
-    <div class="col-sm-5">
+    <div class="col-sm-5 pb-5">
       <h2>Aziende & Partner</h2>
       <p>Puoi consultare le varie aziende con le quali collaboriamo attraverso la pratica mappa che trovi qui sotto.
         Scegli l'azienda e lasciati trasportare nel fantastico mondo della natura!</p>
@@ -530,9 +530,9 @@
     element.id = 'marker' + i;
     element.classList.add('marker');
     var marker = new tt.Marker({element: element}).setLngLat(places[i]).addTo(map);
-    var customPopup = '<div style="display:flex; flex-direction: column; align-items: center;">' +
-            '<img src="src/About/azienda' + i + '.jpg" class="rounded-circle" style="width: 10vw;  height: 10vw;">' +
-            '<div style="height:100%; padding-top:10px; color: #0C492A"><p style="font:16px Poppins" class="text-center"><b>' + names[i] + '</b></p>' + '</div></div>';
+    var customPopup = '<div class="flex flex-column align-items-center justify-content-center">' +
+            '<img src="src/About/azienda' + i + '.jpg" class="rounded-circle" style="width: 5rem;  height: 5rem;">' +
+            '<div style="width: 5rem;"><p class="text-center pt-1 mb-0" style="word-wrap:break-word"><b>' + names[i] + '</b></p>' + '</div></div>';
     var popup = new tt.Popup({offset: popupOffsets}).setHTML(customPopup);
     marker.setPopup(popup);
   }
