@@ -163,6 +163,10 @@ b, h2, h5{
     align-self: center;
 }
 
+#icons > svg{
+    margin-right: 1vw;
+}
+
 /* Swiper */
 .swiper-home {
     width: 100vw;
