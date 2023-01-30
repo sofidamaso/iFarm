@@ -356,30 +356,6 @@ b, h2, h5{
     align-items: center;
 }
 
-.line{
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    content: "";
-    background-color: #D6FF86;
-}
-.line-des{
-    height: 8px;
-    min-width: 15vw;
-}
-
-#triangle-des{
-    justify-self: end;
-    align-self: center;
-    transform: rotate(-90deg);
-}
-.triangle{
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 1;
-}
 .timeline-part1{
     grid-area: timeline1;
 }
@@ -398,9 +374,7 @@ b, h2, h5{
 .timeline-part6{
     grid-area: timeline-end;
 }
-#line-end-des{
-    margin-right: 2vw;
-}
+
     /*
     #container-mob{
         display: grid;
@@ -426,21 +400,7 @@ b, h2, h5{
     width: 100%;
     padding: 0;
 }
-.line-mob{
-    width: 8px;
-    justify-self: center;
-    min-height: 15vw;
-}
-.point-mob{
-    align-self: end;
-}
-#triangle-mob{
-    justify-self: center;
-    align-self: end;
-}
-#line-end-mob{
-    margin-bottom:2vw;
-}
+
 .button-leaf{
     align-self: center;
     grid-row-start: 1;
