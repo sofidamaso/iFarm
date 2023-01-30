@@ -656,3 +656,8 @@ b, h2, h5{
 /*Articoli*/
 
 
+
+.prova{
+    object-fit: cover;
+    height: 126px;
+}
