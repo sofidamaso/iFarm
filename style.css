@@ -161,9 +161,12 @@ b, h2, h5{
 
 /*Footer*/
 #footer{
-    background-color: var(--primary);
+    background-image: url("src/full-footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    height: fit-content !important;
+    width: 100%;
+    height: auto;
     border-top: none !important;
 }
 #footer img{
@@ -171,6 +174,9 @@ b, h2, h5{
 }
 #footer p{
     color: white !important;
+}
+#footer-logo{
+    margin-top: 10vh;
 }
 
 #icons > svg{

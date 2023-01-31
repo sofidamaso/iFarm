@@ -78,6 +78,7 @@
     </div>
 </div>
 
+<!--content-->
 <div class="container">
     <div class="row mt-3">
         <div class="col-sm-5 offset-sm-1">
@@ -91,83 +92,174 @@
             <img class="w-100" src="src/Mission/drone.png">
         </div>
     </div>
-</div>
-<div class="row offset-sm-1">
-    <h2>Una timeline sostenibile</h2>
-</div>
-<!--timeline mobile-->
-<div class="container d-md-none row" id="container-mob">
-    <div id="timeline-mob" class="col-6">
-        <div class="buttons-leaf d-flex flex-column justify-content-evenly">
-            <div class="timeline-part timeline-part1">
-                <!--<div class="point point-mob"></div>-->
-                <img src= "src/Mission/foglia-timeline.svg" class="button-leaf">
-                <p class="txt-leaf">Stazione<br>meteo</p>
+    <div class="row mt-5">
+        <div class="col offset-sm-1">
+            <h2>Una timeline sostenibile</h2>
+        </div>
+    </div>
+    <!--timeline mobile-->
+    <div class="row mt-4">
+        <div class="d-md-none row" id="container-mob">
+            <div id="timeline-mob" class="col-6">
+                <div class="buttons-leaf d-flex flex-column justify-content-evenly">
+                    <div class="timeline-part timeline-part1">
+                        <!--<div class="point point-mob"></div>-->
+                        <img src= "src/Mission/foglia-timeline.svg" class="button-leaf">
+                        <p class="txt-leaf">Stazione<br>meteo</p>
+                    </div>
+                    <div class="timeline-part timeline-part2">
+                        <!--<div class="point point-mob"></div>-->
+                        <img src= "src/Mission/foglia-timeline.svg" class="button-leaf">
+                        <p class="txt-leaf">Pannelli<br>solari</p>
+                    </div>
+                    <div class="timeline-part timeline-part3">
+                        <!--<div class="point point-mob"></div>-->
+                        <img src= "src/Mission/foglia-timeline.svg" class="button-leaf">
+                        <p class="txt-leaf">Droni</p>
+                    </div>
+                    <div class="timeline-part timeline-part4">
+                        <!--<div class="point point-mob"></div>-->
+                        <img src= "src/Mission/foglia-timeline.svg" class="button-leaf">
+                        <p class="txt-leaf">Robot<br>frutta</p>
+                    </div>
+                    <div class="timeline-part timeline-part5">
+                        <!--<div class="point point-mob"></div>-->
+                        <img src= "src/Mission/foglia-timeline.svg" class="button-leaf">
+                        <p class="txt-leaf">Innaffiatori</p>
+                    </div>
+                </div>
+                <svg  id="timeline-arrow-mob" class="button-leaf h-100" width="32" height="1676" viewBox="0 0 32 1676" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="12" width="8" height="1663" rx="3" fill="#B6EC4C"/>
+                    <path d="M14.3697 1673.71C15.167 1674.83 16.833 1674.83 17.6303 1673.71L27.612 1659.66C28.553 1658.33 27.6062 1656.5 25.9817 1656.5H6.01827C4.39377 1656.5 3.44699 1658.33 4.38796 1659.66L14.3697 1673.71Z" fill="#B6EC4C"/>
+                </svg>
+
             </div>
-            <div class="timeline-part timeline-part2">
-                <!--<div class="point point-mob"></div>-->
-                <img src= "src/Mission/foglia-timeline.svg" class="button-leaf">
-                <p class="txt-leaf">Pannelli<br>solari</p>
-            </div>
-            <div class="timeline-part timeline-part3">
-                <!--<div class="point point-mob"></div>-->
-                <img src= "src/Mission/foglia-timeline.svg" class="button-leaf">
-                <p class="txt-leaf">Droni</p>
-            </div>
-            <div class="timeline-part timeline-part4">
-                <!--<div class="point point-mob"></div>-->
-                <img src= "src/Mission/foglia-timeline.svg" class="button-leaf">
-                <p class="txt-leaf">Robot<br>frutta</p>
-            </div>
-            <div class="timeline-part timeline-part5">
-                <!--<div class="point point-mob"></div>-->
-                <img src= "src/Mission/foglia-timeline.svg" class="button-leaf">
-                <p class="txt-leaf">Innaffiatori</p>
+            <div id="cards-mob" class="col-6">
+                <div class="d-flex flex-column justify-content-evenly">
+                    <div class="card bg-transparent card-mob card1">
+                        <div class="card-body">
+                            <img src= "src/Mission/timeline-illustration1.png">
+                            <p class="mt-2 mb-0">Grazie alla stazione agrometeo è possibile misurare dati metereologici come temperatura, pioggia e umidità. Queste stazioni sono dotate di particolari sensori come quelli per la bagnatura fogliare.</p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-transparent card-mob card2">
+                        <div class="card-body">
+                            <img src= "src/Mission/timeline-illustration3.png">
+                            <p class="mt-2 mb-0">L’installazione di impianti fotovoltaici è un’operazione strategica in termini di sostenibilità ambientale. Si potrà produrre in autonomia l’energia necessaria per soddisfare il proprio fabbisogno.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-transparent card-mob card3">
+                        <div class="card-body">
+                            <img src= "src/Mission/timeline-illustration4.png">
+                            <p class="mt-2 mb-0">Grazie ai droni è possibile monitorare il terreno e le sue piante, con lo scopo di ricavare informazioni preziose volte a migliorare il raccolto e rendere più efficienti le risorse idriche e agrotecniche.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-transparent card-mob card4">
+                        <div class="card-body">
+                            <img src= "src/Mission/timeline-illustration5.png">
+                            <p class="mt-2 mb-0">Si tratta di robot in grado di individuare un frutto sulla pianta, determinarne la maturazione e afferrarlo con delicatezza per poi depositarlo all'interno di contenitori, pronti per essere lavorati e impacchettati.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-transparent card-mob card5">
+                        <div class="card-body">
+                            <img src= "src/Mission/timeline-illustration2.png">
+                            <p class="mt-2 mb-0">Il robot ha un piano di irrigazione, che implementa con il meteo. Il robot è dotato di una macchina fotografica, quindi è in grado di monitorare le piante e, se necessario, cambiare il ciclo di irrigazione.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <svg  id="timeline-arrow-mob" class="button-leaf h-100" width="32" height="1676" viewBox="0 0 32 1676" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="12" width="8" height="1663" rx="3" fill="#B6EC4C"/>
-            <path d="M14.3697 1673.71C15.167 1674.83 16.833 1674.83 17.6303 1673.71L27.612 1659.66C28.553 1658.33 27.6062 1656.5 25.9817 1656.5H6.01827C4.39377 1656.5 3.44699 1658.33 4.38796 1659.66L14.3697 1673.71Z" fill="#B6EC4C"/>
-        </svg>
-
     </div>
-    <div id="cards-mob" class="col-6">
-        <div class="d-flex flex-column justify-content-evenly">
-            <div class="card bg-transparent card-mob card1">
+
+    <!--timeline desktop-->
+    <div class="row mt-2">
+        <div class="d-none d-md-grid col-12" id="container-des">
+            <div id="timeline-des">
+                <div class="d-flex flex-row buttons-leaf justify-content-evenly w-100">
+                    <div class="timeline-part timeline-part-des timeline-part1">
+                        <button type="button" class="btn btn-sm button-leaf" id="btn1-timeline">
+                            <img src= "src/Mission/foglia-timeline.svg">
+                            <p class="txt-leaf">Stazione<br>meteo</p>
+                        </button>
+                    </div>
+
+                    <div class="timeline-part timeline-part-des timeline-part2">
+                        <button type="button" class="btn btn-sm button-leaf" id="btn2-timeline">
+                            <img src= "src/Mission/foglia-timeline.svg">
+                            <p class="txt-leaf">Pannelli<br>solari</p>
+                        </button>
+                    </div>
+
+                    <div class="timeline-part timeline-part-des timeline-part3">
+                        <button type="button" class="btn btn-sm button-leaf" id="btn3-timeline">
+                            <img src= "src/Mission/foglia-timeline.svg">
+                            <p class="txt-leaf">Droni</p>
+                        </button>
+                    </div>
+
+                    <div class="timeline-part timeline-part-des timeline-part4">
+                        <button type="button" class="btn btn-sm button-leaf" id="btn4-timeline">
+                            <img src= "src/Mission/foglia-timeline.svg">
+                            <p class="txt-leaf">Robot<br>frutta</p>
+                        </button>
+                    </div>
+
+                    <div class="timeline-part timeline-part-des timeline-part5">
+                        <button type="button" class="btn btn-sm button-leaf" id="btn5-timeline">
+                            <img src= "src/Mission/foglia-timeline.svg">
+                            <p class="txt-leaf">Innaffiatori</p>
+                        </button>
+                    </div>
+                </div>
+                <svg id="timeline-arrow" class="button-leaf w-100" width="100%" height="100%" viewBox="0 0 1280 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="28" width="8.99994" height="1265" rx="3" transform="rotate(-90 0 28)" fill="#B6EC4C"/>
+                    <path d="M1277.83 24.9473C1278.91 24.1477 1278.91 22.5342 1277.83 21.7346L1255.94 5.49441C1254.62 4.51545 1252.75 5.45752 1252.75 7.10074L1252.75 39.5811C1252.75 41.2243 1254.62 42.1664 1255.94 41.1874L1277.83 24.9473Z" fill="#B6EC4C"/>
+                </svg>
+            </div>
+
+            <div class="card card-des card1 animate__animated animate__fadeIn align-self-end" id="card1-des">
                 <div class="card-body">
                     <img src= "src/Mission/timeline-illustration1.png">
-                    <p class="mt-2 mb-0">Grazie alla stazione agrometeo è possibile misurare dati metereologici come temperatura, pioggia e umidità. Queste stazioni sono dotate di particolari sensori come quelli per la bagnatura fogliare.</p>
+                    <p class="mt-2 mb-0 text-center">Grazie alla stazione agrometeo è possibile misurare dati metereologici come temperatura, pioggia e umidità. Queste stazioni sono dotate di particolari sensori come quelli per la bagnatura fogliare.</p>
                 </div>
             </div>
 
-            <div class="card bg-transparent card-mob card2">
+            <div class="card card-des card2 animate__animated animate__fadeIn align-self-end"  id="card2-des">
                 <div class="card-body">
                     <img src= "src/Mission/timeline-illustration3.png">
-                    <p class="mt-2 mb-0">L’installazione di impianti fotovoltaici è un’operazione strategica in termini di sostenibilità ambientale. Si potrà produrre in autonomia l’energia necessaria per soddisfare il proprio fabbisogno.
+                    <p class="mt-2 mb-0 text-center">L’installazione di impianti fotovoltaici è un’operazione strategica in termini di sostenibilità ambientale. Si potrà produrre in autonomia l’energia necessaria per soddisfare il proprio fabbisogno.
                     </p>
                 </div>
             </div>
 
-            <div class="card bg-transparent card-mob card3">
+            <div class="card card-des card3 animate__animated animate__fadeIn align-self-end"  id="card3-des">
                 <div class="card-body">
                     <img src= "src/Mission/timeline-illustration4.png">
-                    <p class="mt-2 mb-0">Grazie ai droni è possibile monitorare il terreno e le sue piante, con lo scopo di ricavare informazioni preziose volte a migliorare il raccolto e rendere più efficienti le risorse idriche e agrotecniche.
+                    <p class="mt-2 mb-0 text-center">Grazie ai droni è possibile monitorare il terreno e le sue piante, con lo scopo di ricavare informazioni preziose volte a migliorare il raccolto e rendere più efficienti le risorse idriche e agrotecniche.
                     </p>
                 </div>
             </div>
 
-            <div class="card bg-transparent card-mob card4">
+            <div class="card card-des card4 animate__animated animate__fadeIn"  id="card4-des">
                 <div class="card-body">
                     <img src= "src/Mission/timeline-illustration5.png">
-                    <p class="mt-2 mb-0">Si tratta di robot in grado di individuare un frutto sulla pianta, determinarne la maturazione e afferrarlo con delicatezza per poi depositarlo all'interno di contenitori, pronti per essere lavorati e impacchettati.
+                    <p class="mt-2 mb-0 text-center">Si tratta di robot in grado di individuare un frutto sulla pianta, determinarne la maturazione e afferrarlo con delicatezza per poi depositarlo all'interno di contenitori, pronti per essere lavorati e impacchettati.
                     </p>
                 </div>
-            </div>
 
-            <div class="card bg-transparent card-mob card5">
+            </div>
+            <div class="card card-des card5 animate__animated animate__fadeIn"  id="card5-des">
                 <div class="card-body">
                     <img src= "src/Mission/timeline-illustration2.png">
-                    <p class="mt-2 mb-0">Il robot ha un piano di irrigazione, che implementa con il meteo. Il robot è dotato di una macchina fotografica, quindi è in grado di monitorare le piante e, se necessario, cambiare il ciclo di irrigazione.
+                    <p class="mt-2 mb-0 text-center">Il robot ha un piano di irrigazione, che implementa con il meteo. Il robot è dotato di una macchina fotografica, quindi è in grado di monitorare le piante e, se necessario, cambiare il ciclo di irrigazione.
                     </p>
                 </div>
             </div>
@@ -175,96 +267,9 @@
     </div>
 </div>
 
-<!--timeline desktop-->
-<div class="row">
-    <div class="container d-none d-md-grid col-12" id="container-des">
-        <div id="timeline-des">
-            <div class="d-flex flex-row buttons-leaf">
-                <div class="timeline-part timeline-part-des timeline-part1">
-                    <button type="button" class="btn btn-sm button-leaf" id="btn1-timeline">
-                        <img src= "src/Mission/foglia-timeline.svg">
-                        <p class="txt-leaf">Stazione<br>meteo</p>
-                    </button>
-                </div>
-
-                <div class="timeline-part timeline-part-des timeline-part2">
-                    <button type="button" class="btn btn-sm button-leaf" id="btn2-timeline">
-                        <img src= "src/Mission/foglia-timeline.svg">
-                        <p class="txt-leaf">Pannelli<br>solari</p>
-                    </button>
-                </div>
-
-                <div class="timeline-part timeline-part-des timeline-part3">
-                    <button type="button" class="btn btn-sm button-leaf" id="btn3-timeline">
-                        <img src= "src/Mission/foglia-timeline.svg">
-                        <p class="txt-leaf">Droni</p>
-                    </button>
-                </div>
-
-                <div class="timeline-part timeline-part-des timeline-part4">
-                    <button type="button" class="btn btn-sm button-leaf" id="btn4-timeline">
-                        <img src= "src/Mission/foglia-timeline.svg">
-                        <p class="txt-leaf">Robot<br>frutta</p>
-                    </button>
-                </div>
-
-                <div class="timeline-part timeline-part-des timeline-part5">
-                    <button type="button" class="btn btn-sm button-leaf" id="btn5-timeline">
-                        <img src= "src/Mission/foglia-timeline.svg">
-                        <p class="txt-leaf">Innaffiatori</p>
-                    </button>
-                </div>
-            </div>
-            <svg id="timeline-arrow" class="button-leaf w-100" width="1280" height="47" viewBox="0 0 1280 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect y="28" width="8.99994" height="1265" rx="3" transform="rotate(-90 0 28)" fill="#B6EC4C"/>
-                <path d="M1277.83 24.9473C1278.91 24.1477 1278.91 22.5342 1277.83 21.7346L1255.94 5.49441C1254.62 4.51545 1252.75 5.45752 1252.75 7.10074L1252.75 39.5811C1252.75 41.2243 1254.62 42.1664 1255.94 41.1874L1277.83 24.9473Z" fill="#B6EC4C"/>
-            </svg>
-        </div>
-
-        <div class="card card-des card1 animate__animated animate__fadeIn" id="card1-des">
-            <div class="card-body">
-                <img src= "src/Mission/timeline-illustration1.png">
-                <p class="mt-2 mb-0">Grazie alla stazione agrometeo è possibile misurare dati metereologici come temperatura, pioggia e umidità. Queste stazioni sono dotate di particolari sensori come quelli per la bagnatura fogliare.</p>
-            </div>
-        </div>
-
-        <div class="card card-des card2 animate__animated animate__fadeIn"  id="card2-des">
-            <div class="card-body">
-                <img src= "src/Mission/timeline-illustration3.png">
-                <p class="mt-2 mb-0">L’installazione di impianti fotovoltaici è un’operazione strategica in termini di sostenibilità ambientale. Si potrà produrre in autonomia l’energia necessaria per soddisfare il proprio fabbisogno.
-                </p>
-            </div>
-        </div>
-
-        <div class="card card-des card3 animate__animated animate__fadeIn"  id="card3-des">
-            <div class="card-body">
-                <img src= "src/Mission/timeline-illustration4.png">
-                <p class="mt-2 mb-0">Grazie ai droni è possibile monitorare il terreno e le sue piante, con lo scopo di ricavare informazioni preziose volte a migliorare il raccolto e rendere più efficienti le risorse idriche e agrotecniche.
-                </p>
-            </div>
-        </div>
-
-        <div class="card card-des card4 animate__animated animate__fadeIn"  id="card4-des">
-            <div class="card-body">
-                <img src= "src/Mission/timeline-illustration5.png">
-                <p class="mt-2 mb-0">Si tratta di robot in grado di individuare un frutto sulla pianta, determinarne la maturazione e afferrarlo con delicatezza per poi depositarlo all'interno di contenitori, pronti per essere lavorati e impacchettati.
-                </p>
-            </div>
-
-        </div>
-        <div class="card card-des card5 animate__animated animate__fadeIn"  id="card5-des">
-            <div class="card-body">
-                <img src= "src/Mission/timeline-illustration2.png">
-                <p class="mt-2 mb-0">Il robot ha un piano di irrigazione, che implementa con il meteo. Il robot è dotato di una macchina fotografica, quindi è in grado di monitorare le piante e, se necessario, cambiare il ciclo di irrigazione.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-<img id="top-footer" src="src/top_footer.png">
 <!--Footer-->
-<footer class="panel d-flex flex-column justify-content-between align-items-center mt-0 p-4 border-top" id="footer">
-    <svg width="155" height="48" viewBox="0 0 155 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<footer class="panel d-flex flex-column justify-content-between align-items-center mt-5 p-4 border-top" id="footer">
+    <svg id="footer-logo" width="155" height="48" viewBox="0 0 155 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="155" height="48" fill="url(#pattern1)"/>
         <defs>
             <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -352,6 +357,7 @@
         $('.navbar-nav').addClass('animate__fadeOut');
     });
 
+    /*timeline pop-up cards*/
     let newSrc = 'src/Mission/foglia-timeline-hover.svg';
     let oldSrc= 'src/Mission/foglia-timeline.svg';
     $('#btn1-timeline').on('mouseenter', function() {
