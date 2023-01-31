@@ -495,7 +495,7 @@ b, h2, h5{
     text-align: center;
 }
 .card-person p{
-    font-weight: lighter;
+    font-weight: 300;
 }
 /*mappa*/
 #map-div {
@@ -660,10 +660,11 @@ b, h2, h5{
     column-gap: 1vw;
 }
 /*Articoli*/
-
-
-
-.prova{
-    object-fit: cover;
-    height: 126px;
+a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+}
+a:hover{
+    color: var(--primary);
 }
