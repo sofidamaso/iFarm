@@ -546,21 +546,39 @@ b, h2, h5{
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
-#container-mini-articles{
-    grid-template-areas: "img1-mini text1-mini" "img2-mini text2-mini" "img3-mini text3-mini" "img4-mini text4-mini" "img5-mini text5-mini";
-    /*grid-template-columns: 40% 60%;*/
-    grid-template-columns: 25% 60%;
-    grid-row-gap: 3vw;
-    grid-column-gap: 3vw;
-    justify-content: center;
-}
+
 
 .img-card-mini{
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#img-card-mini1{
+    background-image: url('src/Blog/agenda2030-small.png');
+}
+#img-card-mini2{
+    background-image: url('src/Blog/agricoltura4-0-small.png');
+}
+#img-card-mini3{
+    background-image: url('src/Blog/agrovoltaico-small.png');
+}
+#img-card-mini4{
+    background-image: url('src/Blog/droni-small.png');
+}
+#img-card-mini5{
+    background-image: url('src/Blog/stazionemeteo-small.png');
 }
 
 .text-card-mini{
     height: 100%;
+}
+.text-card-mini .card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .square {
@@ -577,7 +595,7 @@ b, h2, h5{
     background-color: #00A05E;
 }
 .card-articles{
-    width: 414px;
+    height: 100%;
 }
 
 /*Shop*/
@@ -609,7 +627,10 @@ b, h2, h5{
     width: 100%;
     padding-bottom: 0;
 }
-
+.swiper-coverflow .swiper-slide:not(.swiper-slide-active) .card-content{
+    background-color: white;
+    opacity: 0.6;
+}
 
 
 .plus-link:hover{
