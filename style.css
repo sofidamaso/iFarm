@@ -381,12 +381,6 @@ b, h2, h5{
     grid-area: timeline-end;
 }
 
-    /*
-    #container-mob{
-        display: grid;
-        grid-template-areas: "timeline-mob cards" ;
-        grid-column-gap: 3vw;
-    }*/
 #timeline-mob{
     display: grid;
     grid-area: timeline-mob;
@@ -607,21 +601,8 @@ b, h2, h5{
     padding-bottom: 0;
 }
 
-#card1,#card2,#card3,#card5,#card5,#card6{
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 1;
-}
-/*
-.plus{
-    height: 36px;
-    width: 36px;
-}
-.minus{
-    height: 36px;
-    width: 36px;
-} */
+
+
 .plus-link:hover{
     cursor: pointer;
 }
