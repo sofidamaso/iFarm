@@ -595,6 +595,15 @@ b, h2, h5{
     background-size: cover;
 }
 
+.swiper-coverflow{
+    overflow: visible;
+}
+
+
+.swiper-coverflow .swiper-slide:not(.swiper-slide-active) {
+    /*mix-blend-mode: multiply;*/
+}
+
 .swiper-slide img {
     display: block;
     width: 100%;
