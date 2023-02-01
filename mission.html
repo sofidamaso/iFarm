@@ -404,19 +404,37 @@
 </script>
 <script>
     $('document').ready(function (){
-        for(let i=1; i<6; i++)
-            $('#card'+i+'-des').hide();
+        for(let i=1; i<6; i++){
+            $('#card'+i+'-des').addClass('invisible');
+            $('#card'+i+'-des').height(0);
+        }
     });
+    function checkOpenCards(){
+        let isOpen = false;
+        for(let i=1; i<6; i++){
+            if($('#card'+i+'-des').hasClass('visible'))
+                isOpen = true;
+        }
+        return isOpen;
+    }
+
     function animateCard (n){
-        if($('#card'+n+'-des').hasClass('animate__fadeIn') &&  $('#card'+n+'-des').is(':hidden')){
-            $('#card'+n+'-des').show();
+        if($('#card'+n+'-des').hasClass('animate__fadeIn') &&  $('#card'+n+'-des').hasClass('invisible')){
+            $('#card'+n+'-des').removeClass('invisible');
+            $('#card'+n+'-des').height('fit-content');
+            $('#card'+n+'-des').addClass('visible');
         }
         else {
             $('#card'+n+'-des').removeClass('animate__fadeIn');
             $('#card'+n+'-des').addClass('animate__fadeOut');
-            $('#card'+n+'-des').hide();
+            $('#card'+n+'-des').removeClass('visible');
+            $('#card'+n+'-des').addClass('invisible');
             $('#card'+n+'-des').removeClass('animate__fadeOut');
             $('#card'+n+'-des').addClass('animate__fadeIn');
+
+            if(!checkOpenCards())
+                for(let i=1; i<6; i++)
+                    $('#card'+i+'-des').height(0);
         }
     }
     $('#btn1-timeline').click(function () {
