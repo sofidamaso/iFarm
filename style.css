@@ -174,13 +174,31 @@ b, h2, h5{
 #footer p{
     color: white !important;
 }
-#footer-logo{
-    margin-top: 10vh;
-}
-
-#icons > svg{
+.right-spacing {
     margin-right: 1vw;
 }
+#footer-logo, #icons {
+    margin-top: 7vw;    /*margine di default*/
+}
+@media screen and (min-width: 1200px) {
+    /* per schermi large*/
+    #footer-logo, #icons {
+        margin-top: 10vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    footer .row {
+        margin-top: 20vw;
+    }
+    #footer-logo{
+        margin-bottom: 6vw !important;
+    }
+    #icons{
+        margin-top: 2vw;
+        margin-bottom: 9vw !important;
+    }
+}
+
 
 /* Swiper */
 .swiper-home {
@@ -446,7 +464,7 @@ b, h2, h5{
     --bs-btn-border-width: 0;
 }
 
-@media (min-width: 768px){
+@media screen and (min-width: 768px){
     .d-md-grid {
         display: grid !important;
     }
