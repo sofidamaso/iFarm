@@ -175,7 +175,7 @@ b, h2, h5{
     color: white !important;
 }
 .right-spacing {
-    margin-right: 1vw;
+    margin-right: 1.5vw;
 }
 #footer-logo, #icons {
     margin-top: 7vw;    /*margine di default*/
@@ -186,18 +186,12 @@ b, h2, h5{
         margin-top: 10vw;
     }
 }
-@media screen and (max-width: 768px) {
-    footer .row {
-        margin-top: 20vw;
-    }
-    #footer-logo{
-        margin-bottom: 6vw !important;
-    }
-    #icons{
-        margin-top: 2vw;
-        margin-bottom: 9vw !important;
+@media screen and (min-width: 768px) {
+    .right-spacing{
+       margin-right: 1vw;
     }
 }
+
 
 
 /* Swiper */
