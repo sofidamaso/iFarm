@@ -175,7 +175,7 @@ b, h2, h5{
     color: white !important;
 }
 .right-spacing {
-    margin-right: 1.5vw;
+    margin-right: 1vw;
 }
 #footer-logo, #icons {
     margin-top: 7vw;    /*margine di default*/
@@ -186,12 +186,18 @@ b, h2, h5{
         margin-top: 10vw;
     }
 }
-@media screen and (min-width: 768px) {
-    .right-spacing{
-       margin-right: 1vw;
+@media screen and (max-width: 768px) {
+    footer .row {
+        margin-top: 20vw;
+    }
+    #footer-logo{
+        margin-bottom: 6vw !important;
+    }
+    #icons{
+        margin-top: 2vw;
+        margin-bottom: 9vw !important;
     }
 }
-
 
 
 /* Swiper */
@@ -316,6 +322,25 @@ b, h2, h5{
 }
 
 /*Mission*/
+#sfondo{
+
+    height: 50vh;
+    object-fit: cover;
+    object-position: top;
+}
+#panel-mission img{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+#animation-container{
+    height: 50vh;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
 
 #container-des{
     display: grid;

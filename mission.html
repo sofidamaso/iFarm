@@ -10,6 +10,7 @@
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/> -->
     <link rel="stylesheet" href="hhtps://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -71,8 +72,9 @@
     </div>
 </nav>
 
-<div id="panel-mission">
-    <img class="w-100" src="src/prova.copertina.webp">
+<div id="panel-mission" class="d-grid">
+    <div id="animation-container"></div>
+    <img id="sfondo" class="w-100" src="src/prova.copertina.webp">
     <div class="content">
         <h1>I nostri ideali</h1>
     </div>
@@ -451,6 +453,17 @@
     });
     $('#btn5-timeline').click(function () {
         animateCard(5);
+    });
+</script>
+
+<script>
+    const animation = bodymovin.loadAnimation({
+        container: document.getElementById('animation-container'),
+        path: 'src/prova_desktop-mission.json',
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: "Demo Animation",
     });
 </script>
 </body>
