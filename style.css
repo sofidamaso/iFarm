@@ -638,6 +638,7 @@ a .card{
     font-weight: normal;
 }
 
+
 /*Shop*/
 #container-shop{
     margin: 0 auto;
@@ -716,7 +717,11 @@ a {
     color: var(--primary);
     font-weight: 500;
 }
-a:hover{
+.nav-articles:hover{
+    transform: scale(1.05);
+}
+.nav-articles a:hover{
     color: var(--primary);
 }
+
 
