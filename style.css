@@ -17,6 +17,75 @@ h1, .navbar{
     font-family: 'Audiowide', cursive;
 }
 
+/* Tipografia */
+h1{
+    font-size: 3.438rem;
+}
+h2{
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+h3{
+    font-size: 1.25rem;
+}
+h4{
+    font-size: 0.938rem;
+}
+p{
+    font-size: 0.938rem;
+    font-weight: 300;
+}
+footer p{
+    font-size: 0.75rem;
+}
+.nav-item{
+    font-size: 1.875rem;
+}
+.dropdown-item{
+    font-size: 1.375rem;
+}
+.btn{
+    font-size: 0.938rem;
+}
+.small-text{
+    font-size: 0.75rem;
+}
+
+
+@media screen and (min-width: 768px){
+    h1{
+        font-size: 7.5rem;
+    }
+    h2{
+        font-size: 3.75rem;
+    }
+    h3{
+        font-size: 3.125rem;
+    }
+    h4{
+        font-size: 1.563rem;
+    }
+    p{
+        font-size: 1.25rem;
+    }
+    footer p{
+        font-size: 1.125rem;
+    }
+    .nav-item{
+        font-size: 3.438rem;
+    }
+    .dropdown-item{
+        font-size: 2.5rem;
+    }
+    .btn{
+        font-size: 1.25rem;
+    }
+    .small-text{
+        font-size: 1.063rem;
+    }
+
+}
+
 :root {
     --primary: #0C492A;
     --secondary: #B6EC4C;
@@ -41,7 +110,9 @@ b, h2, h5{
     z-index: 100;
     width: 100%;
 }
-
+.navbar-nav-scroll{
+    overflow-y: visible;
+}
 .dropdown{
     white-space: nowrap;
 }

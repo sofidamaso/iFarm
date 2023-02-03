@@ -30,7 +30,7 @@
             <span class="toggler-icon middle-bar"></span>
             <span class="toggler-icon bottom-bar"></span>
         </button>
-        <div class="collapse navbar-collapse text-center vh-100" id="navbarNav">
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav navbar-nav-scroll animate__animated">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="index.html">Home</a>
@@ -184,7 +184,7 @@
         </div>
     </div>
 
-    <p class="text-center">Design di Sofia Damaso, Valeria Froio, Michela Oltolini, Claudia Rabaioli, Emma
+    <p class="text-center small-text">Design di Sofia Damaso, Valeria Froio, Michela Oltolini, Claudia Rabaioli, Emma
         Salvadori,
         Bianca Santi.
         A.A. 2022/2023 - Corso di Comunicazione Visiva e Design delle Interfacce</p>
@@ -202,7 +202,9 @@
     $('.navbar-collapse').on('show.bs.collapse', function (){
         $('.navbar-collapse').addClass('d-flex');
         $('.navbar-collapse').addClass('justify-content-center');
-        $('.navbar-collapse').addClass('align-content-center');
+        $('.navbar-collapse').addClass('align-items-start');
+        $('body').addClass('overflow-hidden');
+        $('.navbar-collapse').addClass('vh-100');
         $('.navbar').removeClass('bg-grad');
         $('.navbar').addClass('bg-green');
         if($('.navbar-nav').hasClass('animate__fadeOut'))
@@ -216,7 +218,9 @@
         $('.navbar-nav').addClass('animate__fadeOut');
         $('.navbar-collapse').removeClass('d-flex');
         $('.navbar-collapse').removeClass('justify-content-center');
-        $('.navbar-collapse').removeClass('align-content-center');
+        $('.navbar-collapse').removeClass('align-items-start');
+        $('body').removeClass('overflow-hidden');
+        $('.navbar-collapse').removeClass('vh-100');
         $('.navbar').removeClass('bg-green');
         $('.navbar').addClass('bg-grad');
     });

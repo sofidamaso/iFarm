@@ -323,7 +323,7 @@
         </div>
     </div>
 
-    <p class="text-center">Design di Sofia Damaso, Valeria Froio, Michela Oltolini, Claudia Rabaioli, Emma
+    <p class="text-center small-text">Design di Sofia Damaso, Valeria Froio, Michela Oltolini, Claudia Rabaioli, Emma
         Salvadori,
         Bianca Santi.
         A.A. 2022/2023 - Corso di Comunicazione Visiva e Design delle Interfacce</p>
@@ -336,11 +336,14 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 
+<!-- navbar -->
 <script>
     $('.navbar-collapse').on('show.bs.collapse', function (){
         $('.navbar-collapse').addClass('d-flex');
         $('.navbar-collapse').addClass('justify-content-center');
-        $('.navbar-collapse').addClass('align-content-center');
+        $('.navbar-collapse').addClass('align-items-start');
+        $('body').addClass('overflow-hidden');
+        $('.navbar-collapse').addClass('vh-100');
         $('.navbar').removeClass('bg-grad');
         $('.navbar').addClass('bg-green');
         if($('.navbar-nav').hasClass('animate__fadeOut'))
@@ -354,7 +357,9 @@
         $('.navbar-nav').addClass('animate__fadeOut');
         $('.navbar-collapse').removeClass('d-flex');
         $('.navbar-collapse').removeClass('justify-content-center');
-        $('.navbar-collapse').removeClass('align-content-center');
+        $('.navbar-collapse').removeClass('align-items-start');
+        $('body').removeClass('overflow-hidden');
+        $('.navbar-collapse').removeClass('vh-100');
         $('.navbar').removeClass('bg-green');
         $('.navbar').addClass('bg-grad');
     });
@@ -364,51 +369,6 @@
             $('.navbar-nav').removeClass('animate__fadeIn');
         $('.navbar-nav').addClass('animate__fadeOut');
     });
-
-    /*timeline pop-up cards*/
-    let newSrc = 'src/Mission/foglia-timeline-hover.svg';
-    let oldSrc= 'src/Mission/foglia-timeline.svg';
-    $('#btn1-timeline').on('mouseenter', function() {
-            $('#btn1-timeline img').prop('src',newSrc);
-        }
-    );
-    $('#btn1-timeline').on('mouseleave',function() {
-            $('#btn1-timeline img').prop('src',oldSrc);
-        }
-    );
-    $('#btn2-timeline').on('mouseenter', function() {
-            $('#btn2-timeline img').prop('src',newSrc);
-        }
-    );
-    $('#btn2-timeline').on('mouseleave',function() {
-            $('#btn2-timeline img').prop('src',oldSrc);
-        }
-    );
-    $('#btn3-timeline').on('mouseenter', function() {
-            $('#btn3-timeline img').prop('src',newSrc);
-        }
-    );
-    $('#btn3-timeline').on('mouseleave',function() {
-            $('#btn3-timeline img').prop('src',oldSrc);
-        }
-    );
-    $('#btn4-timeline').on('mouseenter', function() {
-            $('#btn4-timeline img').prop('src',newSrc);
-        }
-    );
-    $('#btn4-timeline').on('mouseleave',function() {
-            $('#btn4-timeline img').prop('src',oldSrc);
-        }
-    );
-    $('#btn5-timeline').on('mouseenter', function() {
-            $('#btn5-timeline img').prop('src',newSrc);
-        }
-    );
-    $('#btn5-timeline').on('mouseleave',function() {
-            $('#btn5-timeline img').prop('src',oldSrc);
-        }
-    );
-
 </script>
 <script>
     $('document').ready(function (){
