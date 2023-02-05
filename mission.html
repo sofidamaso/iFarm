@@ -88,19 +88,19 @@
 <!--content-->
 <div class="container pb-5">
     <div class="row mt-3">
-        <div class="col-sm-5 offset-sm-1">
+        <div class="col-md-5 offset-md-1">
             <h2>Il progetto iFarm</h2>
             <p>iFarm è un <b>progetto innovativo</b> che ha l’obiettivo di intersecare natura e tecnologie moderne. L’intersezione tra i due mondi deriva dall’utilizzo di tecnologie che hanno come obiettivo quello di sostenere e alleggerire il lavoro degli agricoltori. iFarm vuole creare un ponte tra le aziende agricole e tutti coloro che hanno il desiderio di avvicinarsi al mondo della natura sperimentando in prima persona la vita del contadino.
             </p>
             <p>È possibile per l’utente contribuire tramite delle donazioni alle aziende o tramite l’acquisto di esperienze da svolgere nell’azienda agricola da loro selezionata. Le donazioni alle aziende possono essere monitorate sia dall’utente che dall’agricoltore tramite una timeline che mostra gli obiettivi sbloccati al raggiungimento di un determinato livello di donazioni. I nuovi traguardi raggiunti consentono alle aziende di ricevere nuove tecnologie da inserire nei loro terreni.
             </p>
         </div>
-        <div class="col-sm-4 offset-sm-1">
+        <div class="col-md-4 offset-md-1">
             <img class="w-100" src="src/Mission/drone.png">
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col offset-sm-1">
+        <div class="col offset-md-1">
             <h2>Una timeline sostenibile</h2>
         </div>
     </div>
@@ -192,36 +192,41 @@
             <div id="timeline-des">
                 <div class="d-flex flex-row buttons-leaf justify-content-evenly w-100">
                     <div class="timeline-part timeline-part-des timeline-part1">
-                        <button type="button" class="btn btn-sm button-leaf" id="btn1-timeline">
-                            <img src= "src/Mission/foglia-timeline.svg">
+                        <button type="button" class="btn btn-md button-leaf" id="btn1-timeline">
+                            <img class="normal-leaf" src= "src/Mission/foglia-timeline.svg">
+                            <img class="hover-leaf d-none" src= "src/Mission/foglia-timeline-hover.svg">
                             <p class="txt-leaf">Stazione<br>meteo</p>
                         </button>
                     </div>
 
                     <div class="timeline-part timeline-part-des timeline-part2">
-                        <button type="button" class="btn btn-sm button-leaf" id="btn2-timeline">
-                            <img src= "src/Mission/foglia-timeline.svg">
+                        <button type="button" class="btn btn-md button-leaf" id="btn2-timeline">
+                            <img class="normal-leaf" src= "src/Mission/foglia-timeline.svg">
+                            <img class="hover-leaf d-none" src= "src/Mission/foglia-timeline-hover.svg">
                             <p class="txt-leaf">Pannelli<br>solari</p>
                         </button>
                     </div>
 
                     <div class="timeline-part timeline-part-des timeline-part3">
-                        <button type="button" class="btn btn-sm button-leaf" id="btn3-timeline">
-                            <img src= "src/Mission/foglia-timeline.svg">
+                        <button type="button" class="btn btn-md button-leaf" id="btn3-timeline">
+                            <img class="normal-leaf" src= "src/Mission/foglia-timeline.svg">
+                            <img class="hover-leaf d-none" src= "src/Mission/foglia-timeline-hover.svg">
                             <p class="txt-leaf">Droni</p>
                         </button>
                     </div>
 
                     <div class="timeline-part timeline-part-des timeline-part4">
-                        <button type="button" class="btn btn-sm button-leaf" id="btn4-timeline">
-                            <img src= "src/Mission/foglia-timeline.svg">
+                        <button type="button" class="btn btn-md button-leaf" id="btn4-timeline">
+                            <img class="normal-leaf" src= "src/Mission/foglia-timeline.svg">
+                            <img class="hover-leaf d-none" src= "src/Mission/foglia-timeline-hover.svg">
                             <p class="txt-leaf">Robot<br>frutta</p>
                         </button>
                     </div>
 
                     <div class="timeline-part timeline-part-des timeline-part5">
-                        <button type="button" class="btn btn-sm button-leaf" id="btn5-timeline">
-                            <img src= "src/Mission/foglia-timeline.svg">
+                        <button type="button" class="btn btn-md button-leaf" id="btn5-timeline">
+                            <img class="normal-leaf" src= "src/Mission/foglia-timeline.svg">
+                            <img class="hover-leaf d-none" src= "src/Mission/foglia-timeline-hover.svg">
                             <p class="txt-leaf">Innaffiatori</p>
                         </button>
                     </div>
@@ -385,7 +390,35 @@
             $('#card'+i+'-des').addClass('invisible');
             $('#card'+i+'-des').height(0);
         }
+        for(let j=1; j<6; j++){
+            $('#btn'+j+'-timeline').hover(
+                function () {
+                    $('#btn'+j+'-timeline .normal-leaf').addClass('d-none');
+                    $('#btn'+j+'-timeline .hover-leaf').removeClass('d-none');
+                },
+                function () {
+                    $('#btn'+j+'-timeline .normal-leaf').removeClass('d-none');
+                    $('#btn'+j+'-timeline .hover-leaf').addClass('d-none');
+                }
+            );
+        }
     });
+/*
+    $('button-leaf').hover(
+        function () {
+            for(let i=1; i<6; i++){
+                $('#btn'+i+'-timeline .normal-leaf').addClass('d-none');
+                $('#btn'+i+'-timeline .hover-leaf').removeClass('d-none');
+            }
+        },
+        function () {
+            for(let i=1; i<6; i++){
+                $('#btn'+i+'-timeline .normal-leaf').removeClass('d-none');
+                $('#btn'+i+'-timeline .hover-leaf').addClass('d-none');
+            }
+        }
+    );*/
+
     function checkOpenCards(){
         let isOpen = false;
         for(let i=1; i<6; i++){

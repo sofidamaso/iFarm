@@ -397,6 +397,7 @@ b, h2, h5{
 }
 .btn:hover{
     background-color: var(--tertiary);
+    color: white;
 }
 #btn-3-1 img, #btn-3-2 img{
     width: 9.709rem;
