@@ -241,12 +241,21 @@ b, h2, h5{
 }
 #footer img{
     align-self: center;
+    width: 7.263rem;
+}
+@media screen and (min-width: 768px){
+    #footer img{
+        width: 11.125rem;
+    }
 }
 #footer p{
     color: white !important;
 }
 .right-spacing {
     margin-right: 1vw;
+}
+.badge{
+    width: 50px;
 }
 #footer-logo, #icons {
     margin-top: 7vw;    /*margine di default*/
@@ -332,11 +341,9 @@ b, h2, h5{
 }
 #btn-3-1{
     grid-area: btn-3-1;
-    width: fit-content;
 }
 #btn-3-2{
     grid-area: btn-3-2;
-    width: fit-content;
     justify-self: start;
 }
 
@@ -390,6 +397,14 @@ b, h2, h5{
 }
 .btn:hover{
     background-color: var(--tertiary);
+}
+#btn-3-1 img, #btn-3-2 img{
+    width: 9.709rem;
+}
+@media screen and (min-width: 768px){
+    #btn-3-1 img, #btn-3-2 img{
+        width: 12.125rem;
+    }
 }
 
 /*Mission*/
@@ -631,7 +646,14 @@ b, h2, h5{
 }
 
 /*App*/
-
+#download-app .badge{
+    width: 9.709rem;
+}
+@media screen and (min-width: 768px){
+    #download-app .badge{
+        width: 12.125rem;
+    }
+}
 /*Blog*/
 .card-articles .card-body,.card-mini-articles .card-body{
     align-items: unset;
