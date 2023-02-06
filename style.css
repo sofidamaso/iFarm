@@ -128,9 +128,6 @@ b, h2, h5{
     z-index: 100;
     width: 100%;
 }
-.navbar>.container-fluid{
-    align-items: baseline;
-}
 .navbar-nav-scroll{
     overflow-y: visible;
 }
