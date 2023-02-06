@@ -427,8 +427,8 @@ b, h2, h5{
 }
 
 #container-des{
-    display: grid;
     grid-template-areas: "card1 . card3 . card5" "timeline timeline timeline timeline timeline" ". card2 . card4 .";
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }
 #timeline-des{
     display: grid;
