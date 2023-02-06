@@ -20,10 +20,12 @@ h1, .navbar{
 /* Tipografia */
 h1{
     font-size: 3.438rem;
+    color: white;
 }
 h2{
     font-size: 1.875rem;
     font-weight: 500;
+    color: white;
 }
 h3{
     font-size: 1.25rem;
