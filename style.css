@@ -50,9 +50,12 @@ footer p{
 .small-text{
     font-size: 0.75rem;
 }
+.tag{
+    height: 0.813rem;
+}
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 992px){
     h1{
         font-size: 7.5rem;
     }
@@ -83,7 +86,12 @@ footer p{
     .small-text{
         font-size: 1.063rem;
     }
-
+    .tag{
+        height: 1.356rem;
+    }
+    .tag-article{
+        height: 1.75rem !important;
+    }
 }
 
 :root {
@@ -185,7 +193,7 @@ b, h2, h5{
 /* State when the navbar is collapsed */
 
 .navbar-toggler.collapsed .top-bar {
-    margin-top: -15px;
+    margin-top: -0.938rem;
     transform: rotate(0deg);
 }
 
@@ -195,7 +203,7 @@ b, h2, h5{
 }
 
 .navbar-toggler.collapsed .bottom-bar {
-    margin-top: 14px;
+    margin-top: 0.938rem;
     transform: rotate(0deg);
 }
 
@@ -222,6 +230,9 @@ b, h2, h5{
 .dropdown-toggle::after {
     display: none;
 }
+.dropdown-toggle{
+    width: 1.125rem;
+}
 .bg-grad{
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.76) 0%, rgba(217, 217, 217, 0) 100%);
     padding-bottom: 4vh;
@@ -243,10 +254,53 @@ b, h2, h5{
     align-self: center;
     width: 7.263rem;
 }
-@media screen and (min-width: 768px){
+#icons svg{
+    width: 2.813rem;
+}
+#footer-logo, .navbar-brand svg{
+    width: 9.688rem;
+}
+button.collapsed{
+    width: 1.875rem;
+}
+
+@media screen and (min-width: 992px){
     #footer img{
         width: 11.125rem;
     }
+    #icons svg{
+        width: 3.678rem;
+    }
+    #footer-logo{
+        width: 12.938rem;
+    }
+    .navbar-brand svg{
+        width: 16rem;
+    }
+    button.collapsed{
+        width: 3.188rem;
+    }
+    .navbar-toggler.collapsed .top-bar {
+        margin-top: -1.876rem;
+    }
+
+    .navbar-toggler.collapsed .bottom-bar {
+        margin-top: 1.876rem;
+    }
+    .toggler-icon{
+        height: 5px;
+    }
+    .navbar-toggler .top-bar {
+        transform: scale(2.2) rotate(135deg);
+    }
+
+    .navbar-toggler .bottom-bar {
+        transform: scale(2.2) rotate(-135deg);
+    }
+    .dropdown-toggle{
+        width: 2.009rem;
+    }
+
 }
 #footer p{
     color: white !important;
@@ -263,7 +317,7 @@ b, h2, h5{
         margin-top: 10vw;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     footer .row {
         margin-top: 20vw;
     }
@@ -399,7 +453,7 @@ b, h2, h5{
 #btn-3-1 img, #btn-3-2 img{
     width: 9.709rem;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 992px){
     #btn-3-1 img, #btn-3-2 img{
         width: 12.125rem;
     }
@@ -569,7 +623,7 @@ b, h2, h5{
     --bs-btn-border-width: 0;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 992px){
     .d-md-grid {
         display: grid !important;
     }
@@ -648,7 +702,7 @@ b, h2, h5{
 #download-app .badge{
     width: 9.709rem;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 992px){
     #download-app .badge{
         width: 12.125rem;
     }
@@ -775,6 +829,7 @@ a .card{
 .hide{
     display: none;
 }
+/*
 .icon-experiences1{
     width: 29px;
     height: 22px;
@@ -789,6 +844,14 @@ a .card{
     width: 19px;
     height: 26px;
     padding-left: 1vw;
+} */
+.icon-experience{
+    width: 1.167rem;
+}
+@media screen and (min-width: 992px){
+    .icon-experience{
+        width: 1.814rem;
+    }
 }
 .price{
     font-size: 25px;
@@ -802,6 +865,14 @@ a .card{
 }
 .card-experience .d-flex{
     column-gap: 1vw;
+}
+.card-experience{
+    margin: 0 2vw;
+}
+@media screen and (min-width: 992px){
+    .card-experience{
+        margin: 0 2.5vw;
+    }
 }
 /*Articoli*/
 a {
@@ -823,7 +894,7 @@ a .article-link{
 .article-link{
     font-size: 0.75rem;
 }
-@media screen and (min-width:768px){
+@media screen and (min-width: 992px){
     .article-link{
         font-size: 1.25rem;
     }
