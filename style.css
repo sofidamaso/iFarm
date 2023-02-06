@@ -263,6 +263,14 @@ b, h2, h5{
     height: auto;
     border-top: none !important;
 }
+.wrapper-home #footer{
+    background-image: none;
+    background-color: var(--primary);
+    height: fit-content !important;
+}
+.wrapper-home #footer-logo, .wrapper-home #icons{
+    margin-top: 0;
+}
 #footer img{
     align-self: center;
     width: 7.263rem;
@@ -366,8 +374,6 @@ button.collapsed{
     height: 100% !important;
     display: grid;
     position: relative;
-    padding-left: 10vw;
-    padding-right: 10vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -391,9 +397,36 @@ button.collapsed{
 #panel1{
     background-image: url('src/Home/home-iFarm.webp');
 }
+#panel1 .container, #panel1 img, #panel2 .container, #panel2 img, #panel3 .container, #panel3 img, #panel4 .container, #panel4 img{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
 
 #panel2{
     background-image: url('src/Home/home-mission.webp');
+}
+#panel2 .subtitle, #panel3 .subtitle, #panel4 .subtitle{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.paper{
+    height: 6rem;
+}
+#top-footer{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4 !important;
+    grid-row-end: 4 !important;
+    padding: 0;
+    width: 100%;
+    border: none !important;
+    stroke: transparent;
+    stroke-width: 0px;
+    margin-bottom: -1vh;
 }
 
 /*cambiare qui immagine panel3*/
@@ -416,10 +449,6 @@ button.collapsed{
     padding-right: 0;
     padding-left: 0;
 }
-#content4{
-    padding-left: 10vw;
-    padding-right: 10vw;
-}
 #btns-4{
     grid-template-areas: "btn-4-1 btn-4-2";
 }
@@ -438,18 +467,6 @@ button.collapsed{
     grid-column-start: 1;
     grid-column-end: 1;
     z-index: 1;
-}
-#top-footer{
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    padding: 0;
-    width: 100%;
-    border: none !important;
-    stroke: transparent;
-    stroke-width: 0px;
-    margin-bottom: -1vh;
 }
 
 .btn{
@@ -588,11 +605,14 @@ button.collapsed{
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+    width: 6.125rem;
 }
-.button-leaf:hover{
+.button-leaf:hover {
     background-color: transparent;
 }
-
+.normal-leaf, .hover-leaf{
+    width: 7.5rem;
+}
 .buttons-leaf{
     /*align-self: center;*/
     grid-row-start: 1;
@@ -605,7 +625,6 @@ button.collapsed{
 }
 
 .txt-leaf{
-    font-size: 20px;
     color: white;
     text-align: center;
     z-index: 2;
@@ -616,7 +635,6 @@ button.collapsed{
     grid-column-end: 1;
     justify-self: center;
     margin: 0;
-    line-height: 110%;
 }
 
 .card-des .card-body{
