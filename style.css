@@ -831,12 +831,4 @@ a .article-link{
 strong{
     font-weight: bold;
 }
-strong ul{
-    font-size: 0.938rem;
-}
-@media screen and (min-width: 768px) {
-    strong ul {
-        font-size: 1.25rem;
-    }
-}
 
