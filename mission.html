@@ -387,8 +387,10 @@
 <script>
     $('document').ready(function (){
         for(let i=1; i<6; i++){
+            /*
             $('#card'+i+'-des').addClass('invisible');
-            $('#card'+i+'-des').height(0);
+            $('#card'+i+'-des').height(0); */
+            $('#card'+i+'-des').hide();
         }
         for(let j=1; j<6; j++){
             $('#btn'+j+'-timeline').hover(
@@ -414,8 +416,17 @@
     }
 
     function animateCard (n){
-        if($('#card'+n+'-des').hasClass('animate__fadeIn') &&  $('#card'+n+'-des').hasClass('invisible')){
-            $('#card'+n+'-des').removeClass('invisible');
+        if($('#card'+n+'-des').hasClass('animate__fadeIn') &&  ($('#card'+n+'-des').hasClass('invisible') || $('#card'+n+'-des').is(':hidden'))){
+            if($('#card'+n+'-des').hasClass('invisible'))
+                $('#card'+n+'-des').removeClass('invisible');
+            else{
+                for(let i=1; i<6; i++){
+                    if(i!=n)
+                        $('#card'+i+'-des').addClass('invisible');
+                    $('#card'+i+'-des').css("display", "block");
+                }
+            }
+
             $('#card'+n+'-des').height('fit-content');
             $('#card'+n+'-des').addClass('visible');
         }
@@ -428,8 +439,11 @@
             $('#card'+n+'-des').addClass('animate__fadeIn');
 
             if(!checkOpenCards())
-                for(let i=1; i<6; i++)
-                    $('#card'+i+'-des').height(0);
+                for(let i=1; i<6; i++){
+                    $('#card'+i+'-des').removeClass('invisible');
+                    $('#card'+i+'-des').hide();
+                }
+
         }
     }
     $('#btn1-timeline').click(function () {

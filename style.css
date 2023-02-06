@@ -254,9 +254,6 @@ b, h2, h5{
 .right-spacing {
     margin-right: 1vw;
 }
-.badge{
-    width: 50px;
-}
 #footer-logo, #icons {
     margin-top: 7vw;    /*margine di default*/
 }
@@ -444,6 +441,7 @@ b, h2, h5{
 .card-des{
     width:auto;
     filter: none !important;
+    height: 0;
 }
 .card-body{
     top: 0;
