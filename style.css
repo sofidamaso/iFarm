@@ -50,9 +50,12 @@ footer p{
 .small-text{
     font-size: 0.75rem;
 }
+.card-experience svg{
+    height: 0.938rem;
+}
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 992px){
     h1{
         font-size: 7.5rem;
     }
@@ -83,6 +86,9 @@ footer p{
     .small-text{
         font-size: 1.063rem;
     }
+    .card-experience svg{
+        height: 1.563rem;
+    }
 
 }
 
@@ -109,6 +115,9 @@ b, h2, h5{
 .navbar{
     z-index: 100;
     width: 100%;
+}
+.navbar>.container-fluid{
+    align-items: baseline;
 }
 .navbar-nav-scroll{
     overflow-y: visible;
@@ -322,16 +331,16 @@ b, h2, h5{
 }
 
 #panel1{
-    background-image: url('src/Home/home-iFarm.svg');
+    background-image: url('src/Home/home-iFarm.webp');
 }
 
 #panel2{
-    background-image: url('src/Home/home-mission.svg');
+    background-image: url('src/Home/home-mission.webp');
 }
 
 /*cambiare qui immagine panel3*/
 #panel3{
-    background-image: url('src/Home/home-mission.svg');
+    background-image: url('src/Home/home-app.webp');
 }
 #btns-3{
     grid-template-areas: "btn-3-1 btn-3-2";
@@ -345,7 +354,7 @@ b, h2, h5{
 }
 
 #panel4{
-    background-image: url('src/Home/home-azienda-cliente.svg');
+    background-image: url('src/Home/home-azienda-cliente.webp');
     padding-right: 0;
     padding-left: 0;
 }
@@ -389,8 +398,8 @@ b, h2, h5{
     color: white;
     background-color: var(--primary);
     width: fit-content;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 .btn:hover{
     background-color: var(--tertiary);
@@ -406,20 +415,14 @@ b, h2, h5{
 }
 
 /*Mission*/
-#sfondo{
-
-    height: 50vh;
-    object-fit: cover;
-    object-position: top;
-}
 #panel-mission img{
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
 }
+
 #animation-container{
-    height: 50vh;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -441,7 +444,6 @@ b, h2, h5{
 .card-des{
     width:auto;
     filter: none !important;
-    height: 0;
 }
 .card-body{
     top: 0;
@@ -502,9 +504,7 @@ b, h2, h5{
 
 #timeline-mob{
     display: grid;
-    grid-area: timeline-mob;
     justify-content: space-around;
-    align-content: space-between;
 }
 #cards-mob{
     grid-area: cards;
@@ -615,7 +615,7 @@ b, h2, h5{
 /*mappa*/
 #map-div {
     width: 100%;
-    height: 100%;
+    height: fit-content;
 }
 
 .marker {
@@ -648,9 +648,15 @@ b, h2, h5{
 #download-app .badge{
     width: 9.709rem;
 }
+.alignment{
+    align-self: center;
+}
 @media screen and (min-width: 768px){
     #download-app .badge{
         width: 12.125rem;
+    }
+    .alignment{
+        align-self: start;
     }
 }
 /*Blog*/

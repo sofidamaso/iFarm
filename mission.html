@@ -16,7 +16,7 @@
 <body class="d-flex flex-column min-vh-100">
 <!--Navbar-->
 <nav class="navbar navbar-collapse bg-grad fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid h-100">
         <a class="navbar-brand" href="index.html">
             <svg width="155" height="48" viewBox="0 0 155 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="155" height="48" fill="url(#pattern0)"/>
@@ -35,7 +35,7 @@
             <span class="toggler-icon middle-bar"></span>
             <span class="toggler-icon bottom-bar"></span>
         </button>
-        <div class="collapse navbar-collapse text-center vh-100" id="navbarNav">
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav navbar-nav-scroll animate__animated">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="index.html">Home</a>
@@ -72,17 +72,12 @@
     </div>
 </nav>
 
-<!--div id="panel-mission" class="d-grid">
+<div id="panel-mission" class="d-grid">
     <div id="animation-container"></div>
     <img  class="w-100" src="src/prova.copertina.webp">
-    <div class="content">
+    <!--div class="content">
         <h1>I nostri ideali</h1>
-    </div>
-</div-->
-<div id="panel1">
-    <div class="content">
-        <h1>Agenda 2030</h1>
-    </div>
+    </div-->
 </div>
 
 <!--content-->
@@ -107,8 +102,8 @@
     <!--timeline mobile-->
     <div class="row mt-4">
         <div class="d-md-none row" id="container-mob">
-            <div id="timeline-mob" class="col-6">
-                <div class="buttons-leaf d-flex flex-column justify-content-evenly">
+            <div id="timeline-mob" class="col-6 position-relative h-100">
+                <div class="buttons-leaf d-flex flex-column justify-content-around">
                     <div class="timeline-part timeline-part1">
                         <!--<div class="point point-mob"></div>-->
                         <img src= "src/Mission/foglia-timeline.svg" class="button-leaf">
@@ -135,7 +130,7 @@
                         <p class="txt-leaf">Innaffiatori</p>
                     </div>
                 </div>
-                <svg  id="timeline-arrow-mob" class="button-leaf h-100" width="32" height="1676" viewBox="0 0 32 1676" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg  id="timeline-arrow-mob" class="button-leaf h-100 position-absolute" viewBox="0 0 32 1676" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="12" width="8" height="1663" rx="3" fill="#B6EC4C"/>
                     <path d="M14.3697 1673.71C15.167 1674.83 16.833 1674.83 17.6303 1673.71L27.612 1659.66C28.553 1658.33 27.6062 1656.5 25.9817 1656.5H6.01827C4.39377 1656.5 3.44699 1658.33 4.38796 1659.66L14.3697 1673.71Z" fill="#B6EC4C"/>
                 </svg>
@@ -351,45 +346,11 @@
         crossorigin="anonymous"></script>
 
 <!-- navbar -->
-<script>
-    $('.navbar-collapse').on('show.bs.collapse', function (){
-        $('.navbar-collapse').addClass('d-flex');
-        $('.navbar-collapse').addClass('justify-content-center');
-        $('.navbar-collapse').addClass('align-items-start');
-        $('body').addClass('overflow-hidden');
-        $('.navbar-collapse').addClass('vh-100');
-        $('.navbar').removeClass('bg-grad');
-        $('.navbar').addClass('bg-green');
-        if($('.navbar-nav').hasClass('animate__fadeOut'))
-            $('.navbar-nav').removeClass('animate__fadeOut');
-        $('.navbar-nav').addClass('animate__fadeIn');
-    });
+<script src="src/navbar.js"></script>
 
-    $('.navbar-collapse').on('hidden.bs.collapse', function () {
-        if($('.navbar-nav').hasClass('animate__fadeIn'))
-            $('.navbar-nav').removeClass('animate__fadeIn');
-        $('.navbar-nav').addClass('animate__fadeOut');
-        $('.navbar-collapse').removeClass('d-flex');
-        $('.navbar-collapse').removeClass('justify-content-center');
-        $('.navbar-collapse').removeClass('align-items-start');
-        $('body').removeClass('overflow-hidden');
-        $('.navbar-collapse').removeClass('vh-100');
-        $('.navbar').removeClass('bg-green');
-        $('.navbar').addClass('bg-grad');
-    });
-
-    $('.navbar-collapse').on('hide.bs.collapse', function (){
-        if($('.navbar-nav').hasClass('animate__fadeIn'))
-            $('.navbar-nav').removeClass('animate__fadeIn');
-        $('.navbar-nav').addClass('animate__fadeOut');
-    });
-</script>
 <script>
     $('document').ready(function (){
         for(let i=1; i<6; i++){
-            /*
-            $('#card'+i+'-des').addClass('invisible');
-            $('#card'+i+'-des').height(0); */
             $('#card'+i+'-des').hide();
         }
         for(let j=1; j<6; j++){
@@ -406,44 +367,16 @@
         }
     });
 
-    function checkOpenCards(){
-        let isOpen = false;
-        for(let i=1; i<6; i++){
-            if($('#card'+i+'-des').hasClass('visible'))
-                isOpen = true;
-        }
-        return isOpen;
-    }
-
     function animateCard (n){
-        if($('#card'+n+'-des').hasClass('animate__fadeIn') &&  ($('#card'+n+'-des').hasClass('invisible') || $('#card'+n+'-des').is(':hidden'))){
-            if($('#card'+n+'-des').hasClass('invisible'))
-                $('#card'+n+'-des').removeClass('invisible');
-            else{
-                for(let i=1; i<6; i++){
-                    if(i!=n)
-                        $('#card'+i+'-des').addClass('invisible');
-                    $('#card'+i+'-des').css("display", "block");
-                }
-            }
-
-            $('#card'+n+'-des').height('fit-content');
-            $('#card'+n+'-des').addClass('visible');
+        if($('#card'+n+'-des').hasClass('animate__fadeIn') &&  $('#card'+n+'-des').is(':hidden')){
+            $('#card'+n+'-des').show();
         }
         else {
             $('#card'+n+'-des').removeClass('animate__fadeIn');
             $('#card'+n+'-des').addClass('animate__fadeOut');
-            $('#card'+n+'-des').removeClass('visible');
-            $('#card'+n+'-des').addClass('invisible');
+            $('#card'+n+'-des').hide();
             $('#card'+n+'-des').removeClass('animate__fadeOut');
             $('#card'+n+'-des').addClass('animate__fadeIn');
-
-            if(!checkOpenCards())
-                for(let i=1; i<6; i++){
-                    $('#card'+i+'-des').removeClass('invisible');
-                    $('#card'+i+'-des').hide();
-                }
-
         }
     }
     $('#btn1-timeline').click(function () {
@@ -461,6 +394,25 @@
     $('#btn5-timeline').click(function () {
         animateCard(5);
     });
+</script>
+<script>
+    function setDim(){
+        let des = document.getElementById('container-des');
+        if(window.getComputedStyle(des).display === "none"){
+            let height = document.getElementsByClassName('card-mob')[0].clientHeight;
+            for(let i=0; i<document.getElementsByClassName('card-mob').length; i++){
+                document.getElementsByClassName('card-mob')[i].style.height = height +'px';
+            }
+        }
+
+    }
+
+    setDim();
+
+    window.addEventListener('resize', function(event) {
+        setDim();
+    }, true);
+
 </script>
 
 <script>

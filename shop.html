@@ -13,7 +13,7 @@
 <body class="d-flex flex-column min-vh-100">
 <!--Navbar-->
 <nav class="navbar navbar-collapse bg-grad fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid h-100">
         <a class="navbar-brand" href="index.html">
             <svg width="155" height="48" viewBox="0 0 155 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="155" height="48" fill="url(#pattern0)"/>
@@ -32,7 +32,7 @@
             <span class="toggler-icon middle-bar"></span>
             <span class="toggler-icon bottom-bar"></span>
         </button>
-        <div class="collapse navbar-collapse text-center vh-100" id="navbarNav">
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav navbar-nav-scroll animate__animated">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="index.html">Home</a>
@@ -255,14 +255,12 @@
                                             </svg>
                                             <p>Per adulti e bambini +5</p>
                                         </div>
-                                        <div class="row">
                                             <div class="d-flex flex-row">
                                                 <svg width="29" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M15.1096 0C8.99932 0 4 4.99932 4 11.1096C4 17.2199 8.99932 22.2192 15.1096 22.2192C21.2199 22.2192 26.2192 17.2199 26.2192 11.1096C26.2192 4.99932 21.2199 0 15.1096 0ZM10.3325 14.998L9.5548 13.5537L13.9986 10.9985V5.5548H15.6651V11.9984L10.3325 14.998Z" fill="#10492A"/>
                                                 </svg>
                                                 <p>3h</p>
                                             </div>
-                                        </div>
                                         <div class="row">
                                             <div class="d-flex flex-row">
                                                 <svg width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -669,38 +667,6 @@
 </script>
 
 <!-- navbar -->
-<script>
-    $('.navbar-collapse').on('show.bs.collapse', function (){
-        $('.navbar-collapse').addClass('d-flex');
-        $('.navbar-collapse').addClass('justify-content-center');
-        $('.navbar-collapse').addClass('align-items-start');
-        $('body').addClass('overflow-hidden');
-        $('.navbar-collapse').addClass('vh-100');
-        $('.navbar').removeClass('bg-grad');
-        $('.navbar').addClass('bg-green');
-        if($('.navbar-nav').hasClass('animate__fadeOut'))
-            $('.navbar-nav').removeClass('animate__fadeOut');
-        $('.navbar-nav').addClass('animate__fadeIn');
-    });
-
-    $('.navbar-collapse').on('hidden.bs.collapse', function () {
-        if($('.navbar-nav').hasClass('animate__fadeIn'))
-            $('.navbar-nav').removeClass('animate__fadeIn');
-        $('.navbar-nav').addClass('animate__fadeOut');
-        $('.navbar-collapse').removeClass('d-flex');
-        $('.navbar-collapse').removeClass('justify-content-center');
-        $('.navbar-collapse').removeClass('align-items-start');
-        $('body').removeClass('overflow-hidden');
-        $('.navbar-collapse').removeClass('vh-100');
-        $('.navbar').removeClass('bg-green');
-        $('.navbar').addClass('bg-grad');
-    });
-
-    $('.navbar-collapse').on('hide.bs.collapse', function (){
-        if($('.navbar-nav').hasClass('animate__fadeIn'))
-            $('.navbar-nav').removeClass('animate__fadeIn');
-        $('.navbar-nav').addClass('animate__fadeOut');
-    });
-</script>
+<script src="src/navbar.js"></script>
 </body>
 </html>
