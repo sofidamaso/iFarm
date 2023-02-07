@@ -142,8 +142,8 @@ b, h2{
 }
 
 .navbar-toggler {
-    width: 1.875rem;
-    height: 48px;
+    width: 2rem;
+    height: 58px;
     position: relative;
     transition: .5s ease-in-out;
 }
@@ -173,10 +173,10 @@ b, h2{
 .toggler-icon {
     display: block;
     position: absolute;
-    height: 3px;
-    width: 100%;
+    height: 4px;
     background: #04110B;
-    border-radius: 3px;
+    border-radius: 4px;
+    width: 100%;
     opacity: 1;
     left: 0;
     transform: rotate(0deg);
@@ -207,7 +207,7 @@ b, h2{
 /* State when the navbar is collapsed */
 
 .navbar-toggler.collapsed .top-bar {
-    margin-top: -0.938rem;
+    margin-top: -1.3rem;
     transform: rotate(0deg);
 }
 
@@ -217,7 +217,7 @@ b, h2{
 }
 
 .navbar-toggler.collapsed .bottom-bar {
-    margin-top: 0.938rem;
+    margin-top: 1.3rem;
     transform: rotate(0deg);
 }
 
@@ -295,16 +295,23 @@ b, h2{
         width: 16rem;
     }
     .navbar-toggler{
-        width: 3.188rem;
-        height: 70.27px;
+        width: 2.6rem;
+        height: 89.27px;
     }
     .toggler-icon{
         height: 5px;
+        border-radius: 5px;
     }
     .dropdown-toggle{
         width: 2.009rem;
     }
+    .navbar-toggler.collapsed .top-bar {
+        margin-top: -1.5rem;
+    }
 
+    .navbar-toggler.collapsed .bottom-bar {
+        margin-top: 1.5rem;
+    }
 }
 .icon{
     width: 1.5rem;
