@@ -105,7 +105,6 @@ footer p{
     }
 
 }
-
 :root {
     --primary: #0C492A;
     --secondary: #B6EC4C;
@@ -412,9 +411,6 @@ button.collapsed{
     grid-row-start: 2;
     grid-row-end: 2;
 }
-.paper{
-    height: 6rem;
-}
 #top-footer{
     grid-column-start: 1;
     grid-column-end: 1;
@@ -495,13 +491,22 @@ button.collapsed{
     grid-row-start: 1;
     grid-row-end: 1;
 }
-
 #animation-container{
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
 }
+#animation-container svg{
+    width: 100% !important;
+    transform: translate3d(0px, 0px, 0px);
+    content-visibility: visible;
+    display: inline-block;
+}
+#panel-mission img{
+      object-fit: cover;
+      object-position: top;
+  }
 
 #container-des{
     grid-template-areas: "card1 . card3 . card5" "timeline timeline timeline timeline timeline" ". card2 . card4 .";
@@ -857,6 +862,10 @@ a .card{
 }
 .hide{
     display: none;
+}
+#download-app svg:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 /*
 .icon-experiences1{

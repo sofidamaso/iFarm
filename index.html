@@ -136,7 +136,8 @@
     <div class="swiper-slide" id="panel4">
       <div class="content">
         <div class="d-grid">
-          <img class="vw-100 paper" src="src/Home/strappo4.png">
+          <img class="vw-100 d-none paper" src="src/Home/strappo4.png" id="paper-normal">
+          <img class="vw-100 d-block paper" src="src/Home/strappo4-high.png" id="paper-high">
           <div class="container align-self-center">
             <h1>Azienda e cliente</h1>
           </div>
@@ -247,6 +248,29 @@
       clickable: true,
     }
   });
+</script>
+<script>
+  function countLines(){
+    var divHeight = $('#panel4 h1').outerHeight();
+    var lineHeight = parseInt($('#panel4 h1').css("line-height").replace("px",""));
+    var lines = Math.floor(divHeight / lineHeight);
+
+    if(lines>1){
+      $('#paper-normal').removeClass('d-block');
+      $('#paper-normal').addClass('d-none');
+      $('#paper-high').removeClass('d-none');
+      $('#paper-high').addClass('d-block');
+    }
+    else{
+      $('#paper-normal').removeClass('d-none');
+      $('#paper-normal').addClass('d-block');
+      $('#paper-high').removeClass('d-block');
+      $('#paper-high').addClass('d-none');
+    }
+  }
+
+  $(document).ready(countLines);
+  $(window).resize(countLines);
 </script>
 </body>
 
