@@ -50,7 +50,7 @@ footer p{
     font-size: 0.938rem;
 }
 .small-text{
-    font-size: 0.75rem;
+    font-size: 0.625rem;
 }
 
 .card-experience svg{
@@ -90,7 +90,7 @@ footer p{
         font-size: 1.25rem;
     }
     .small-text{
-        font-size: 1.063rem;
+        font-size: 0.875rem;
     }
 
     .card-experience svg{
@@ -266,14 +266,14 @@ b, h2, h5{
     background-color: var(--primary);
     height: fit-content !important;
 }
-.wrapper-home #footer-logo, .wrapper-home #icons{
+.wrapper-home #footer-logo, .wrapper-home #social-icons{
     margin-top: 0;
 }
 #footer img{
     align-self: center;
     width: 7.263rem;
 }
-#icons svg{
+#social-icons svg{
     width: 2.813rem;
 }
 #footer-logo, .navbar-brand svg{
@@ -286,9 +286,6 @@ button.collapsed{
 @media screen and (min-width: 992px){
     #footer img{
         width: 11.125rem;
-    }
-    #icons svg{
-        width: 3.678rem;
     }
     #footer-logo{
         width: 12.938rem;
@@ -321,35 +318,48 @@ button.collapsed{
     }
 
 }
+.icon{
+    width: 1.5rem;
+}
+@media screen and (min-width: 768px){
+    #social-icons svg{
+        width: 3.625rem;
+    }
+}
 #footer p{
     color: white !important;
 }
 .right-spacing {
-    margin-right: 1vw;
+    margin-right: 3vw;
 }
-#footer-logo, #icons {
-    margin-top: 7vw;    /*margine di default*/
+#footer-logo, #social-icons {
+    /*margin-top: 7vw;   margine di default*/
+}
+.info{
+    column-gap: 1vw;
 }
 @media screen and (min-width: 1200px) {
     /* per schermi large*/
-    #footer-logo, #icons {
-        margin-top: 10vw;
+    #footer-logo {
+        /*margin-top: 10vw;*/
     }
 }
-@media screen and (max-width: 992px) {
-    footer .row {
-        margin-top: 20vw;
+@media screen and (min-width: 992px) {
+    footer > :first-child{
+        padding-top: 5vw;
     }
+    .right-spacing {
+        margin-right: 1vw;
+    }
+    /*
     #footer-logo{
         margin-bottom: 6vw !important;
     }
-    #icons{
-        margin-top: 2vw;
+    #social-icons{
+        /*margin-top: 2vw;
         margin-bottom: 9vw !important;
-    }
+    } */
 }
-
-
 /* Swiper */
 .swiper-home {
     width: 100vw;
@@ -378,9 +388,12 @@ button.collapsed{
 }
 
 .scroll{
-    width: auto !important;
-    justify-self: center;
-    align-self:end;
+    height: 2.375rem;
+}
+@media screen and (min-width: 992px){
+    .scroll{
+        height: 3.938rem;
+    }
 }
 .content{
     align-self: end;
@@ -391,9 +404,23 @@ button.collapsed{
     column-gap: 2vw;
     justify-content: start;
 }
+@media screen and (min-width: 992px){
+    #panel1 {
+        background-image: url('src/Home/home-iFarm-des.webp') !important;
+    }
+    #panel2{
+        background-image: url('src/Home/home-mission-des.webp') !important;
+    }
+    #panel3{
+        background-image: url('src/Home/home-app-des.webp') !important;
+    }
+    #panel4{
+        background-image: url('src/Home/home-azienda-cliente-des.webp') !important;
+    }
+}
 
 #panel1{
-    background-image: url('src/Home/home-iFarm.webp');
+    background-image: url('src/Home/home-iFarm-mob.webp');
 }
 #panel1 .container, #panel1 img, #panel2 .container, #panel2 img, #panel3 .container, #panel3 img, #panel4 .container, #panel4 img{
     grid-column-start: 1;
@@ -403,7 +430,7 @@ button.collapsed{
 }
 
 #panel2{
-    background-image: url('src/Home/home-mission.webp');
+    background-image: url('src/Home/home-mission-mob.webp');
 }
 #panel2 .subtitle, #panel3 .subtitle, #panel4 .subtitle{
     grid-column-start: 1;
@@ -424,9 +451,8 @@ button.collapsed{
     margin-bottom: -1vh;
 }
 
-/*cambiare qui immagine panel3*/
 #panel3{
-    background-image: url('src/Home/home-app.webp');
+    background-image: url('src/Home/home-app-mob.webp');
 }
 #btns-3{
     grid-template-areas: "btn-3-1 btn-3-2";
@@ -440,7 +466,7 @@ button.collapsed{
 }
 
 #panel4{
-    background-image: url('src/Home/home-azienda-cliente.webp');
+    background-image: url('src/Home/home-azienda-cliente-mob.webp');
     padding-right: 0;
     padding-left: 0;
 }
