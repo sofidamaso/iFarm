@@ -33,3 +33,5 @@ $('.navbar-collapse').on('hide.bs.collapse', function (){
         $('.navbar-nav').removeClass('animate__fadeIn');
     $('.navbar-nav').addClass('animate__fadeOut');
 });
+
+
