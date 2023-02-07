@@ -25,6 +25,8 @@ h1{
 h2{
     font-size: 1.875rem;
     font-weight: 500;
+}
+.wrapper-home h2{
     color: white;
 }
 h3{
@@ -66,7 +68,7 @@ footer p{
         font-size: 7.5rem;
     }
     h2{
-        font-size: 3.75rem;
+        font-size: 4.375rem;
     }
     h3{
         font-size: 3.125rem;
@@ -120,7 +122,7 @@ p{
     color: var(--text-color);
 }
 
-b, h2, h5{
+b, h2{
     color: var(--primary);
 }
 
@@ -141,11 +143,12 @@ b, h2, h5{
 }
 
 .navbar-toggler {
-    width: 20px;
-    height: 20px;
+    width: 1.875rem;
+    height: 48px;
     position: relative;
     transition: .5s ease-in-out;
 }
+
 .nav-link, .dropdown-item{
     color: var(--primary)!important;
     background-color: transparent!important;
@@ -280,9 +283,7 @@ b, h2, h5{
 #footer-logo, .navbar-brand svg{
     width: 9.688rem;
 }
-button.collapsed{
-    width: 1.875rem;
-}
+
 
 @media screen and (min-width: 992px){
     #footer img{
@@ -297,25 +298,12 @@ button.collapsed{
     .navbar-brand svg{
         width: 16rem;
     }
-    button.collapsed{
+    .navbar-toggler{
         width: 3.188rem;
-    }
-    .navbar-toggler.collapsed .top-bar {
-        margin-top: -1.876rem;
-    }
-
-    .navbar-toggler.collapsed .bottom-bar {
-        margin-top: 1.876rem;
+        height: 70.27px;
     }
     .toggler-icon{
         height: 5px;
-    }
-    .navbar-toggler .top-bar {
-        transform: scale(2.2) rotate(135deg);
-    }
-
-    .navbar-toggler .bottom-bar {
-        transform: scale(2.2) rotate(-135deg);
     }
     .dropdown-toggle{
         width: 2.009rem;
@@ -416,10 +404,8 @@ button.collapsed{
     height: 6rem;
 }
 #top-footer{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 4 !important;
-    grid-row-end: 4 !important;
+    grid-row-start: 2 !important;
+    grid-row-end: 2 !important;
     padding: 0;
     width: 100%;
     border: none !important;
@@ -472,8 +458,8 @@ button.collapsed{
     color: white;
     background-color: var(--primary);
     width: fit-content;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 .btn:hover{
     background-color: var(--tertiary);
@@ -485,6 +471,12 @@ button.collapsed{
 @media screen and (min-width: 992px){
     #btn-3-1 img, #btn-3-2 img{
         width: 12.125rem;
+    }
+}
+@media screen and (min-width: 768px){
+    .btn{
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 }
 
@@ -720,7 +712,7 @@ button.collapsed{
 }
 
 /*App*/
-#download-app .badge{
+.download-app .badge{
     width: 9.709rem;
 }
 
@@ -729,9 +721,11 @@ button.collapsed{
 }
 
 @media screen and (min-width: 992px){
-    #download-app .badge{
+    .download-app .badge{
         width: 12.125rem;
     }
+}
+@media screen and (min-width: 768px){
     .alignment{
         align-self: start;
     }
