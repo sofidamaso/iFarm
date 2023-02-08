@@ -531,7 +531,14 @@ b, h2{
     display: grid;
     grid-area: timeline;
 }
-
+.card-illustration{
+    width: 6.063rem;
+}
+@media screen and (min-width: 768px){
+    .card-illustration{
+        width: 8.063rem;
+    }
+}
 .card{
     border-style: none;
 }
