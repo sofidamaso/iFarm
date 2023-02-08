@@ -408,7 +408,7 @@ b, h2{
     }
 }
 
-.paper{
+.paper-high, .paper-normal{
     object-fit: cover;
     height: 100%;
 }
@@ -466,11 +466,9 @@ b, h2{
 }
 #btn-4-1{
     grid-area: btn-4-1;
-    width: fit-content;
 }
 #btn-4-2{
     grid-area: btn-4-2;
-    width: fit-content;
     justify-self: start;
 }
 #scroll4{
@@ -484,9 +482,8 @@ b, h2{
 .btn{
     color: white;
     background-color: var(--primary);
-    width: fit-content;
-    padding-left: 15vw;
-    padding-right: 15vw;
+    width: 9.688rem;
+    --bs-btn-border-width: 0;
 }
 .btn:hover{
     background-color: var(--tertiary);
@@ -500,10 +497,9 @@ b, h2{
         width: 12.125rem;
     }
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 992px){
     .btn{
-        padding-left: 5vw;
-        padding-right: 5vw;
+        width: 14.75rem;
     }
 }
 
@@ -672,9 +668,7 @@ b, h2{
     flex: none;
     background-color: transparent;
 }
-.btn{
-    --bs-btn-border-width: 0;
-}
+
 
 @media screen and (min-width: 992px){
     .d-md-grid {
