@@ -42,7 +42,7 @@ p{
 footer p{
     font-size: 0.75rem;
 }
-.nav-item{
+.nav-link{
     font-size: 1.875rem;
 }
 .dropdown-item{
@@ -836,7 +836,7 @@ strong{
     footer p{
         font-size: 1.125rem;
     }
-    .nav-item{
+    .nav-link{
         font-size: 3.438rem;
     }
     .dropdown-item{
