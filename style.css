@@ -297,7 +297,7 @@ b, h2{
 .scroll{
     height: 2.375rem;
 }
-.content{
+.wrapper-home .content{
     align-self: end;
     justify-content: start;
     background: linear-gradient(
