@@ -55,14 +55,6 @@ footer p{
     font-size: 0.625rem;
 }
 
-.card-experience svg{
-    height: 0.938rem;
-}
-.tag{
-    height: 0.813rem;
-}
-
-
 @media screen and (min-width: 992px){
     h1{
         font-size: 7.5rem;
@@ -91,21 +83,109 @@ footer p{
     .btn{
         font-size: 1.25rem;
     }
-    .small-text{
+    .small-text {
         font-size: 0.875rem;
+    }
+    .article-link{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #social-icons svg{
+        width: 3.625rem;
+    }
+    .btn{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .card-illustration{
+        width: 8.063rem;
+    }
+    .alignment{
+        align-self: start;
     }
 
     .card-experience svg{
         height: 1.563rem;
     }
-
     .tag{
         height: 1.356rem;
     }
     .tag-article{
         height: 1.75rem !important;
     }
+    #footer img{
+        width: 11.125rem;
+    }
+    #footer-logo{
+        width: 12.938rem;
+    }
+    .navbar-brand svg{
+        width: 16rem;
+    }
+    .navbar-toggler{
+        width: 2.6rem;
+        height: 89.27px;
+    }
+    .toggler-icon{
+        height: 5px;
+        border-radius: 5px;
+    }
+    .dropdown-toggle{
+        width: 2.009rem;
+    }
+    .navbar-toggler.collapsed .top-bar {
+        margin-top: -1.5rem;
+    }
 
+    .navbar-toggler.collapsed .bottom-bar {
+        margin-top: 1.5rem;
+    }
+    footer > :first-child{
+        padding-top: 5vw;
+    }
+    .right-spacing {
+        margin-right: 1vw;
+    }
+    .scroll{
+        height: 3.938rem;
+    }
+    #panel1 {
+        background-image: url('src/Home/home-iFarm-des.webp') !important;
+    }
+    #panel2{
+        background-image: url('src/Home/home-mission-des.webp') !important;
+    }
+    #panel3{
+        background-image: url('src/Home/home-app-des.webp') !important;
+    }
+    #panel4{
+        background-image: url('src/Home/home-azienda-cliente-des.webp') !important;
+    }
+    #btn-3-1 img, #btn-3-2 img{
+        width: 12.125rem;
+    }
+    .button-leaf{
+        display: grid;
+    }
+    .button-leaf img{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        justify-self: center;
+        align-self: center;
+    }
+    .download-app .badge{
+        width: 12.125rem;
+    }
+    .icon-experience{
+        width: 1.814rem;
+    }
+    .card-experience{
+        margin: 0 2.5vw;
+    }
 }
 :root {
     --primary: #0C492A;
@@ -124,7 +204,12 @@ p{
 b, h2{
     color: var(--primary);
 }
-
+.card-experience svg{
+    height: 0.938rem;
+}
+.tag{
+    height: 0.813rem;
+}
 
 /*navbar*/
 .navbar{
@@ -291,43 +376,8 @@ b, h2{
     width: 9.688rem;
 }
 
-
-@media screen and (min-width: 992px){
-    #footer img{
-        width: 11.125rem;
-    }
-    #footer-logo{
-        width: 12.938rem;
-    }
-    .navbar-brand svg{
-        width: 16rem;
-    }
-    .navbar-toggler{
-        width: 2.6rem;
-        height: 89.27px;
-    }
-    .toggler-icon{
-        height: 5px;
-        border-radius: 5px;
-    }
-    .dropdown-toggle{
-        width: 2.009rem;
-    }
-    .navbar-toggler.collapsed .top-bar {
-        margin-top: -1.5rem;
-    }
-
-    .navbar-toggler.collapsed .bottom-bar {
-        margin-top: 1.5rem;
-    }
-}
 .icon{
     width: 1.5rem;
-}
-@media screen and (min-width: 768px){
-    #social-icons svg{
-        width: 3.625rem;
-    }
 }
 #footer p{
     color: white !important;
@@ -341,14 +391,7 @@ b, h2{
 .info{
     column-gap: 1vw;
 }
-@media screen and (min-width: 992px) {
-    footer > :first-child{
-        padding-top: 5vw;
-    }
-    .right-spacing {
-        margin-right: 1vw;
-    }
-}
+
 /* Swiper */
 .swiper-home {
     width: 100vw;
@@ -360,8 +403,7 @@ b, h2{
 }
 
 .swiper-pagination-bullet {
-    background: var(--secondary);
-    /*per desktop 1rem, per mobile meno*/
+    background: white;
     width: 1rem;
     height: 1rem;
 }
@@ -379,35 +421,21 @@ b, h2{
 .scroll{
     height: 2.375rem;
 }
-@media screen and (min-width: 992px){
-    .scroll{
-        height: 3.938rem;
-    }
-}
 .content{
     align-self: end;
     justify-content: start;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.2) 29.48%,
+            rgba(0, 0, 0, 0.3) 50.83%,
+            rgba(0, 0, 0, 0.2) 75.31%,
+            rgba(0, 0, 0, 0) 100%);
 }
 .buttons{
     display: grid;
     column-gap: 2vw;
     justify-content: start;
 }
-@media screen and (min-width: 992px){
-    #panel1 {
-        background-image: url('src/Home/home-iFarm-des.webp') !important;
-    }
-    #panel2{
-        background-image: url('src/Home/home-mission-des.webp') !important;
-    }
-    #panel3{
-        background-image: url('src/Home/home-app-des.webp') !important;
-    }
-    #panel4{
-        background-image: url('src/Home/home-azienda-cliente-des.webp') !important;
-    }
-}
-
 .paper{
     object-fit: cover;
     height: 100%;
@@ -495,17 +523,6 @@ b, h2{
 #btn-3-1 img, #btn-3-2 img{
     width: 9.709rem;
 }
-@media screen and (min-width: 992px){
-    #btn-3-1 img, #btn-3-2 img{
-        width: 12.125rem;
-    }
-}
-@media screen and (min-width: 768px){
-    .btn{
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-}
 
 /*Mission*/
 #panel-mission img, #animation-container, #panel-mission .content{
@@ -531,9 +548,9 @@ b, h2{
     display: inline-block;
 }
 #panel-mission img{
-      object-fit: cover;
-      object-position: top;
-  }
+    object-fit: cover;
+    object-position: top;
+}
 
 #container-des{
     grid-template-areas: "card1 . card3 . card5" "timeline timeline timeline timeline timeline" ". card2 . card4 .";
@@ -545,11 +562,6 @@ b, h2{
 }
 .card-illustration{
     width: 6.063rem;
-}
-@media screen and (min-width: 768px){
-    .card-illustration{
-        width: 8.063rem;
-    }
 }
 .card{
     border-style: none;
@@ -683,23 +695,6 @@ b, h2{
     --bs-btn-border-width: 0;
 }
 
-@media screen and (min-width: 992px){
-    .d-md-grid {
-        display: grid !important;
-    }
-    .button-leaf{
-        display: grid;
-    }
-    .button-leaf img{
-        grid-row-start: 1;
-        grid-row-end: 1;
-        grid-column-start: 1;
-        grid-column-end: 1;
-        justify-self: center;
-        align-self: center;
-    }
-}
-
 /*About*/
 .team-card{
     display: grid;
@@ -767,16 +762,6 @@ b, h2{
     align-self: center;
 }
 
-@media screen and (min-width: 992px){
-    .download-app .badge{
-        width: 12.125rem;
-    }
-}
-@media screen and (min-width: 768px){
-    .alignment{
-        align-self: start;
-    }
-}
 /*Blog*/
 .card-articles .card-body,.card-mini-articles .card-body{
     align-items: unset;
@@ -922,11 +907,6 @@ a .card{
 .icon-experience{
     width: 1.167rem;
 }
-@media screen and (min-width: 992px){
-    .icon-experience{
-        width: 1.814rem;
-    }
-}
 .price{
     font-size: 25px;
 }
@@ -943,11 +923,7 @@ a .card{
 .card-experience{
     margin: 0 2vw;
 }
-@media screen and (min-width: 992px){
-    .card-experience{
-        margin: 0 2.5vw;
-    }
-}
+
 /*Articoli*/
 a {
     text-decoration: none;
@@ -968,12 +944,7 @@ a .article-link{
 .article-link{
     font-size: 0.75rem;
 }
-@media screen and (min-width: 992px){
-    .article-link{
-        font-size: 1.25rem;
-    }
-}
 strong{
-    font-weight: bold;
+    font-weight: 500;
 }
 
