@@ -63,134 +63,6 @@ a .article-link{
     font-size: 0.75rem;
 }
 
-@media screen and (min-width: 992px){
-    h1{
-        font-size: 7.5rem;
-    }
-    h2{
-        font-size: 4.375rem;
-    }
-    h3{
-        font-size: 3.125rem;
-    }
-    h4{
-        font-size: 1.563rem;
-    }
-    p{
-        font-size: 1.25rem;
-    }
-    footer p{
-        font-size: 1.125rem;
-    }
-    .nav-item{
-        font-size: 3.438rem;
-    }
-    .dropdown-item{
-        font-size: 2.5rem;
-    }
-    .btn{
-        font-size: 1.25rem;
-    }
-    .small-text {
-        font-size: 0.875rem;
-    }
-    .article-link{
-        font-size: 1.25rem;
-    }
-    .tag-article{
-        height: 1.75rem !important;
-    }
-}
-
-@media screen and (min-width: 768px){
-    #social-icons svg{
-        width: 3.625rem;
-    }
-    .card-illustration{
-        width: 8.063rem;
-    }
-    .alignment{
-        align-self: start;
-    }
-
-    .card-experience svg{
-        height: 1.563rem;
-    }
-    .tag{
-        height: 1.356rem;
-    }
-    #footer img{
-        width: 11.125rem;
-    }
-    #footer-logo{
-        width: 12.938rem;
-    }
-    .navbar-brand svg{
-        width: 16rem;
-    }
-    .navbar-toggler{
-        width: 2.6rem;
-        height: 89.27px;
-    }
-    .toggler-icon{
-        height: 5px;
-        border-radius: 5px;
-    }
-    .dropdown-toggle{
-        width: 2.009rem;
-    }
-    .navbar-toggler.collapsed .top-bar {
-        margin-top: -1.5rem;
-    }
-
-    .navbar-toggler.collapsed .bottom-bar {
-        margin-top: 1.5rem;
-    }
-    footer > :first-child{
-        padding-top: 5vw;
-    }
-    .right-spacing {
-        margin-right: 1vw;
-    }
-    .scroll{
-        height: 3.938rem;
-    }
-    #panel1 {
-        background-image: url('src/Home/home-iFarm-des.webp') !important;
-    }
-    #panel2{
-        background-image: url('src/Home/home-mission-des.webp') !important;
-    }
-    #panel3{
-        background-image: url('src/Home/home-app-des.webp') !important;
-    }
-    #panel4{
-        background-image: url('src/Home/home-azienda-cliente-des.webp') !important;
-    }
-    #btn-3-1 img, #btn-3-2 img{
-        width: 12.125rem;
-    }
-    .button-leaf{
-        display: grid;
-    }
-    .button-leaf img{
-        grid-row-start: 1;
-        grid-row-end: 1;
-        grid-column-start: 1;
-        grid-column-end: 1;
-        justify-self: center;
-        align-self: center;
-    }
-    .download-app .badge{
-        width: 12.125rem;
-    }
-    .icon-experience{
-        width: 1.814rem;
-    }
-    .card-experience{
-        margin: 0 2.5vw;
-    }
-}
 :root {
     --primary: #0C492A;
     --secondary: #B6EC4C;
@@ -773,8 +645,8 @@ b, h2{
 }
 
 /*App*/
-.download-app .badge{
-    width: 9.709rem;
+.badge{
+    width: 8.625rem;
 }
 
 .alignment{
@@ -893,16 +765,17 @@ a .card{
     opacity: 0.6;
 }
 
-.plus-link:hover{
+.plus-link, .minus-link{
+    width: 1.813rem;
+}
+.plus-link:hover, .minus-link:hover{
     cursor: pointer;
 }
-.minus-link:hover{
-    cursor: pointer;
-}
+
 .hide{
     display: none;
 }
-#download-app svg:hover{
+svg.badge:hover{
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -941,5 +814,134 @@ a {
 }
 strong{
     font-weight: 500;
+}
+
+/* Media queries*/
+@media screen and (min-width: 992px){
+    h1{
+        font-size: 7.5rem;
+    }
+    h2{
+        font-size: 4.375rem;
+    }
+    h3{
+        font-size: 3.125rem;
+    }
+    h4{
+        font-size: 1.563rem;
+    }
+    p{
+        font-size: 1.25rem;
+    }
+    footer p{
+        font-size: 1.125rem;
+    }
+    .nav-item{
+        font-size: 3.438rem;
+    }
+    .dropdown-item{
+        font-size: 2.5rem;
+    }
+    .btn{
+        font-size: 1.25rem;
+    }
+    .small-text {
+        font-size: 0.875rem;
+    }
+    .article-link{
+        font-size: 1.25rem;
+    }
+    .plus-link, .minus-link{
+        width: 4.313rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #social-icons svg{
+        width: 3.625rem;
+    }
+    .card-illustration{
+        width: 8.063rem;
+    }
+    .alignment{
+        align-self: start;
+    }
+    .card-experience svg{
+        height: 1.563rem;
+    }
+    .tag{
+        height: 1.356rem;
+    }
+    #footer img{
+        width: 11.125rem;
+    }
+    #footer-logo{
+        width: 12.938rem;
+    }
+    .navbar-brand svg{
+        width: 16rem;
+    }
+    .navbar-toggler{
+        width: 2.6rem;
+        height: 89.27px;
+    }
+    .toggler-icon{
+        height: 5px;
+        border-radius: 5px;
+    }
+    .dropdown-toggle{
+        width: 2.009rem;
+    }
+    .navbar-toggler.collapsed .top-bar {
+        margin-top: -1.5rem;
+    }
+
+    .navbar-toggler.collapsed .bottom-bar {
+        margin-top: 1.5rem;
+    }
+    footer > :first-child{
+        padding-top: 5vw;
+    }
+    .right-spacing {
+        margin-right: 1vw;
+    }
+    .scroll{
+        height: 3.938rem;
+    }
+    #panel1 {
+        background-image: url('src/Home/home-iFarm-des.webp') !important;
+    }
+    #panel2{
+        background-image: url('src/Home/home-mission-des.webp') !important;
+    }
+    #panel3{
+        background-image: url('src/Home/home-app-des.webp') !important;
+    }
+    #panel4{
+        background-image: url('src/Home/home-azienda-cliente-des.webp') !important;
+    }
+    #btn-3-1 img, #btn-3-2 img{
+        width: 12.125rem;
+    }
+    .button-leaf{
+        display: grid;
+    }
+    .button-leaf img{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        justify-self: center;
+        align-self: center;
+    }
+    .badge{
+        width: 12.125rem;
+    }
+    .icon-experience{
+        width: 1.814rem;
+    }
+    .card-experience{
+        margin: 0 2.5vw;
+    }
 }
 
