@@ -547,21 +547,20 @@ b, h2{
 }
 
 /*Mission*/
-#panel-mission img, #animation-container, #panel-mission .content{
+.panel img, #animation-container, .panel .content{
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
 }
-#panel-mission{
+.panel{
     height: fit-content;
 }
-.paper-cover{
+.paper-cover, .panel .content{
     z-index: 3;
-    margin-top: 90vh;
 }
-#panel-mission .content{
-    z-index: 3;
+#animation-container, .image-cover{
+    height: 75vh;
 }
 #animation-container svg{
     width: 100% !important;
@@ -569,7 +568,7 @@ b, h2{
     content-visibility: visible;
     display: inline-block;
 }
-#panel-mission img{
+.panel img{
     object-fit: cover;
     object-position: top;
 }
@@ -894,7 +893,6 @@ a .card{
     opacity: 0.6;
 }
 
-
 .plus-link:hover{
     cursor: pointer;
 }
@@ -908,22 +906,7 @@ a .card{
     transform: scale(1.05);
     cursor: pointer;
 }
-/*
-.icon-experiences1{
-    width: 29px;
-    height: 22px;
-    padding-left: 1vw;
-}
-.icon-experiences2{
-    width: 21px;
-    height: 21px;
-    padding-left: 1vw;
-}
-.icon-experiences3{
-    width: 19px;
-    height: 26px;
-    padding-left: 1vw;
-} */
+
 .icon-experience{
     width: 1.167rem;
 }

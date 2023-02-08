@@ -18,7 +18,7 @@
 <body class="d-flex flex-column min-vh-100">
 <!--Navbar-->
 <nav class="navbar navbar-collapse bg-grad fixed-top">
-    <div class="container h-100">
+    <div class="container-fluid h-100">
         <a class="navbar-brand" href="index.html">
             <svg class="d-block" viewBox="0 0 155 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="155" height="48" fill="url(#pattern0)"/>
@@ -74,9 +74,16 @@
     </div>
 </nav>
 
-<div id="panel1">
-    <div class="content">
-        <h1>I nostri ideali</h1>
+<div class="panel d-grid">
+    <div id="animation-container"></div>
+    <img class="w-100 image-cover" src="src/About/cover.webp">
+    <img class="w-100 paper-cover align-self-end" src="src/Mission/strappo.png">
+    <div class="container content d-grid">
+        <div class="row align-self-center">
+            <div class="col-md-8 offset-md-1">
+                <h1>Un po' di storia</h1>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -1000,6 +1007,7 @@
         clickPlusMinus(6, null, '-mob');
     });
 </script>
+<script src="src/cover.js"></script>
 </body>
 
 </html>
