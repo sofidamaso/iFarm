@@ -276,8 +276,16 @@ b, h2{
     align-self: center;
     width: 7.263rem;
 }
+#footer img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
 #social-icons svg{
     width: 2.813rem;
+}
+#social-icons svg:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 #footer-logo, .navbar-brand svg{
     width: 9.688rem;
@@ -414,6 +422,10 @@ b, h2{
     }
 }
 
+.paper{
+    object-fit: cover;
+    height: 100%;
+}
 #panel1{
     background-image: url('src/Home/home-iFarm-mob.webp');
 }
