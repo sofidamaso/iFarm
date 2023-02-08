@@ -54,6 +54,14 @@ footer p{
 .small-text{
     font-size: 0.625rem;
 }
+a .article-link{
+    display: inline;
+    color: inherit;
+    font-weight: inherit;
+}
+.article-link{
+    font-size: 0.75rem;
+}
 
 @media screen and (min-width: 992px){
     h1{
@@ -89,6 +97,9 @@ footer p{
     .article-link{
         font-size: 1.25rem;
     }
+    .tag-article{
+        height: 1.75rem !important;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -107,9 +118,6 @@ footer p{
     }
     .tag{
         height: 1.356rem;
-    }
-    .tag-article{
-        height: 1.75rem !important;
     }
     #footer img{
         width: 11.125rem;
@@ -947,14 +955,6 @@ a {
 }
 .nav-articles a:hover{
     color: var(--primary);
-}
-a .article-link{
-    display: inline;
-    color: inherit;
-    font-weight: inherit;
-}
-.article-link{
-    font-size: 0.75rem;
 }
 strong{
     font-weight: 500;
