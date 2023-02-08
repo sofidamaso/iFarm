@@ -341,12 +341,6 @@ b, h2{
 .info{
     column-gap: 1vw;
 }
-@media screen and (min-width: 1200px) {
-    /* per schermi large*/
-    #footer-logo {
-        /*margin-top: 10vw;*/
-    }
-}
 @media screen and (min-width: 992px) {
     footer > :first-child{
         padding-top: 5vw;
@@ -354,14 +348,6 @@ b, h2{
     .right-spacing {
         margin-right: 1vw;
     }
-    /*
-    #footer-logo{
-        margin-bottom: 6vw !important;
-    }
-    #social-icons{
-        /*margin-top: 2vw;
-        margin-bottom: 9vw !important;
-    } */
 }
 /* Swiper */
 .swiper-home {
@@ -522,17 +508,21 @@ b, h2{
 }
 
 /*Mission*/
-#panel-mission img{
+#panel-mission img, #animation-container, #panel-mission .content{
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
 }
-#animation-container{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
+#panel-mission{
+    height: fit-content;
+}
+.paper-cover{
+    z-index: 3;
+    margin-top: 90vh;
+}
+#panel-mission .content{
+    z-index: 3;
 }
 #animation-container svg{
     width: 100% !important;
