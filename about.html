@@ -723,7 +723,7 @@
 </div>
 
 <!--Footer-->
-<footer class="panel d-flex flex-column justify-content-between mt-auto p-4 border-top" id="footer">
+<footer class="d-flex flex-column justify-content-between mt-auto p-4 border-top" id="footer">
     <div class="row mt-5 mb-3 mb-md-5">
         <div class="col-md-4 mt-5 d-flex flex-column offset-md-1 align-items-center align-items-md-start">
             <div class="row">
@@ -914,8 +914,8 @@
     }
 
     function setDim(){
-        let height = document.getElementsByTagName('canvas')[0].clientHeight;
-        let width = document.getElementsByTagName('canvas')[0].clientWidth;
+        let height = document.querySelector('#map-div canvas').clientHeight;
+        let width = document.querySelector('#map-div canvas').clientWidth;
         document.getElementsByClassName('mapboxgl-canvas-container')[0].style.height = height +'px';
         document.getElementsByClassName('mapboxgl-canvas-container')[0].style.width = width +'px';
     }
@@ -1050,43 +1050,46 @@
             if(animationDes != undefined)
                 document.getElementById('animation-container').style.display = 'none';
             document.getElementById('animation-container-mobile').style.display = 'block';
-            if(animationMob == undefined) {
-                animationMob = {
-                    container: document.getElementById('animation-container-mobile'),
-                    animationData: jsonMob,
-                    renderer: 'canvas',
-                    loop: true,
-                    autoplay: true,
-                    name: "Demo Animation",
-                    rendererSettings: {
-                        preserveAspectRatio: 'xMidYMid slice',
-                        width: '100%',
-                        height: '100%',
-                    }
-                };
-                bodymovin.loadAnimation(animationMob);
+
+            if(animationMob !=undefined){
+                document.querySelector('#animation-container-mobile canvas').remove();
             }
+            animationMob = {
+                container: document.getElementById('animation-container-mobile'),
+                animationData: jsonMob,
+                renderer: 'canvas',
+                loop: true,
+                autoplay: true,
+                name: "Demo Animation",
+                rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid slice',
+                    width: '100%',
+                    height: '100%',
+                }
+            };
+            bodymovin.loadAnimation(animationMob);
         }
         else{
             if(animationMob != undefined)
                 document.getElementById('animation-container-mobile').style.display = 'none';
             document.getElementById('animation-container').style.display = 'block';
-            if(animationDes == undefined) {
-                animationDes = {
-                    container: document.getElementById('animation-container'),
-                    animationData: jsonDes,
-                    renderer: 'canvas',
-                    loop: true,
-                    autoplay: true,
-                    name: "Demo Animation",
-                    rendererSettings: {
-                        preserveAspectRatio: 'xMidYMid slice',
-                        width: '100%',
-                        height: '100%',
-                    }
-                };
-                bodymovin.loadAnimation(animationDes);
+            if(animationDes !=undefined){
+                document.querySelector('#animation-container canvas').remove();
             }
+            animationDes = {
+                container: document.getElementById('animation-container'),
+                animationData: jsonDes,
+                renderer: 'canvas',
+                loop: true,
+                autoplay: true,
+                name: "Demo Animation",
+                rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid slice',
+                    width: '100%',
+                    height: '100%',
+                }
+            };
+            bodymovin.loadAnimation(animationDes);
         }
     }
     startAnimation();
