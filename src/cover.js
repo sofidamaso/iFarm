@@ -1,4 +1,7 @@
 $.fn.countLinesText = function(){
+    if($('.panel h1').length<=0){
+        return;
+    }
     let divHeight = $('.panel h1').outerHeight();
     let lineHeight = parseInt($('.panel h1').css("line-height").replace("px",""));
     return Math.floor(divHeight / lineHeight);
