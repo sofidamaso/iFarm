@@ -420,7 +420,7 @@ b, h2{
 }
 
 /*Mission*/
-.panel img, #animation-container, .panel .content, .shadow{
+.panel img, #animation-container, #animation-container-mobile, .panel .content, .shadow{
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -432,7 +432,7 @@ b, h2{
 .paper-cover, .panel .content{
     z-index: 3;
 }
-#animation-container, .image-cover{
+#animation-container,#animation-container-mobile, .image-cover{
     height: 75vh;
 }
 .shadow{
@@ -440,12 +440,11 @@ b, h2{
     transform: rotate(-180deg);
     height: 75vh;
 }
-#animation-container svg{
+#animation-container svg, #animation-container-mobile svg{
     width: 100% !important;
     transform: translate3d(0px, 0px, 0px);
-    content-visibility: visible;
-    display: inline-block;
 }
+
 .panel img{
     object-fit: cover;
     object-position: top;
