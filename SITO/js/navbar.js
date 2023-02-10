@@ -5,6 +5,7 @@ $('.navbar-collapse').on('show.bs.collapse', function (){
     $('body').addClass('overflow-hidden');
     $('nav').addClass('vh-100');
     $('.navbar .container-fluid').addClass('align-items-baseline');
+    $('.navbar').removeClass('bg-grad');
     $('.navbar').addClass('bg-green');
     if($('.navbar-nav').hasClass('animate__fadeOut'))
         $('.navbar-nav').removeClass('animate__fadeOut');
@@ -22,6 +23,7 @@ $('.navbar-collapse').on('hidden.bs.collapse', function () {
     $('nav').removeClass('vh-100');
     $('.navbar .container-fluid').removeClass('align-items-baseline');
     $('.navbar').removeClass('bg-green');
+    $('.navbar').addClass('bg-grad');
 });
 
 $('.navbar-collapse').on('hide.bs.collapse', function (){
