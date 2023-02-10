@@ -21,6 +21,7 @@ h1, .navbar{
 h1{
     font-size: 3.438rem;
     color: white;
+    line-height: 1;
 }
 h2{
     font-size: 1.875rem;
@@ -195,17 +196,14 @@ b, h2{
 .dropdown-toggle{
     width: 1.125rem;
 }
-.bg-grad{
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.76) 0%, rgba(217, 217, 217, 0) 100%);
-    padding-bottom: 4vh;
-}
+
 .bg-green{
     background-color: var(--secondary) !important;
 }
 
 /*Footer*/
 #footer{
-    background-image: url("src/full-footer.png");
+    background-image: url("../img/full-footer.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -229,6 +227,7 @@ b, h2{
 }
 #social-icons svg{
     width: 2.813rem;
+
 }
 #social-icons svg:hover{
     transform: scale(1.05);
@@ -240,6 +239,7 @@ b, h2{
 
 .icon{
     width: 1.5rem;
+    height: 2.125rem
 }
 #footer p{
     color: white !important;
@@ -289,16 +289,16 @@ b, h2{
 }
 @media screen and (min-width: 992px){
     #panel1 {
-        background-image: url('src/Home/home-iFarm-des.webp') !important;
+        background-image: url('../img/Home/home-iFarm-des.webp') !important;
     }
     #panel2{
-        background-image: url('src/Home/home-mission-des.webp') !important;
+        background-image: url('../img/Home/home-mission-des.webp') !important;
     }
     #panel3{
-        background-image: url('src/Home/home-app-des.webp') !important;
+        background-image: url('../img/Home/home-app-des.webp') !important;
     }
     #panel4{
-        background-image: url('src/Home/home-azienda-cliente-des.webp') !important;
+        background-image: url('../img/Home/home-azienda-cliente-des.webp') !important;
     }
 }
 
@@ -307,7 +307,7 @@ b, h2{
     height: 100%;
 }
 #panel1{
-    background-image: url('src/Home/home-iFarm-mob.webp');
+    background-image: url('../img/Home/home-iFarm-mob.webp');
 }
 #panel1 .container, #panel1 img, #panel2 .container, #panel2 img, #panel3 .container, #panel3 img, #panel4 .container, #panel4 img{
     grid-column-start: 1;
@@ -317,7 +317,7 @@ b, h2{
 }
 
 #panel2{
-    background-image: url('src/Home/home-mission-mob.webp');
+    background-image: url('../img/Home/home-mission-mob.webp');
 }
 #panel2 .subtitle, #panel3 .subtitle, #panel4 .subtitle{
     grid-column-start: 1;
@@ -337,7 +337,7 @@ b, h2{
 }
 
 #panel3{
-    background-image: url('src/Home/home-app-mob.webp');
+    background-image: url('../img/Home/home-app-mob.webp');
 }
 #btns-3{
     grid-template-areas: "btn-3-1 btn-3-2";
@@ -351,7 +351,7 @@ b, h2{
 }
 
 #panel4{
-    background-image: url('src/Home/home-azienda-cliente-mob.webp');
+    background-image: url('../img/Home/home-azienda-cliente-mob.webp');
     padding-right: 0;
     padding-left: 0;
 }
@@ -598,13 +598,13 @@ b, h2{
 }
 
 .marker {
-    background-image: url('src/About/marker.svg');
+    background-image: url('../img/About/marker.svg');
     width: 35px;
     height: 35px;
 }
 
 .marker:hover {
-    background-image: url('src/About/marker_hover.svg');
+    background-image: url('../img/About/marker_hover.svg');
 }
 
 .mapboxgl-popup-content {
@@ -662,19 +662,19 @@ b, h2{
     background-position: center;
 }
 #img-card-mini1{
-    background-image: url('src/Blog/agenda2030-small.webp');
+    background-image: url('../img/Blog/agenda2030-small.webp');
 }
 #img-card-mini2{
-    background-image: url('src/Blog/agricoltura4-0-small.webp');
+    background-image: url('../img/Blog/agricoltura4-0-small.webp');
 }
 #img-card-mini3{
-    background-image: url('src/Blog/agrovoltaico-small.webp');
+    background-image: url('../img/Blog/agrovoltaico-small.webp');
 }
 #img-card-mini4{
-    background-image: url('src/Blog/droni-small.webp');
+    background-image: url('../img/Blog/droni-small.webp');
 }
 #img-card-mini5{
-    background-image: url('src/Blog/stazionemeteo-small.webp');
+    background-image: url('../img/Blog/stazionemeteo-small.webp');
 }
 
 .text-card-mini{
@@ -837,11 +837,19 @@ strong{
     .badge{
         width: 12.125rem;
     }
+    .navbar-toggler.collapsed .top-bar {
+        margin-top: -1.5rem;
+    }
+
+    .navbar-toggler.collapsed .bottom-bar {
+        margin-top: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 768px){
     #social-icons svg{
         width: 3.625rem;
+        height: 3.625rem;
     }
     .card-illustration{
         width: 8.063rem;
@@ -875,13 +883,7 @@ strong{
     .dropdown-toggle{
         width: 2.009rem;
     }
-    .navbar-toggler.collapsed .top-bar {
-        margin-top: -1.5rem;
-    }
 
-    .navbar-toggler.collapsed .bottom-bar {
-        margin-top: 1.5rem;
-    }
     footer > :first-child{
         padding-top: 5vw;
     }
@@ -892,16 +894,16 @@ strong{
         height: 3.938rem;
     }
     #panel1 {
-        background-image: url('src/Home/home-iFarm-des.webp') !important;
+        background-image: url('../img/Home/home-iFarm-des.webp') !important;
     }
     #panel2{
-        background-image: url('src/Home/home-mission-des.webp') !important;
+        background-image: url('../img/Home/home-mission-des.webp') !important;
     }
     #panel3{
-        background-image: url('src/Home/home-app-des.webp') !important;
+        background-image: url('../img/Home/home-app-des.webp') !important;
     }
     #panel4{
-        background-image: url('src/Home/home-azienda-cliente-des.webp') !important;
+        background-image: url('../img/Home/home-azienda-cliente-des.webp') !important;
     }
     #btn-3-1 img, #btn-3-2 img{
         width: 12.125rem;
