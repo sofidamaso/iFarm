@@ -70,8 +70,11 @@
 </nav>
 
 <div class="panel d-grid">
-    <img class="w-100 image-cover d-md-none" src="src/App/App-cliente/cover-mobile.webp" alt="Cliente">
-    <img class="w-100 image-cover d-none d-md-inline-block" src="src/App/App-cliente/cover.webp" alt="Cliente">
+    <img class="w-100 image-cover"
+         srcset=" src/App/App-cliente/cover_1200.webp 1200w, src/App/App-cliente/cover_992.webp 992w, src/App/App-cliente/cover_390.webp 390w"
+         sizes="(min-width: 1200px) 1200px, (min-width: 992px) 992px, 390px"
+         src="src/App/App-cliente/cover_1200.webp"
+         alt="Cliente">
     <div class="w-100 shadow"></div>
     <img class="w-100 paper-cover align-self-end" src="src/papers/app-cliente.webp" alt="strappo di carta">
     <div class="container content d-grid">
@@ -159,6 +162,7 @@
         </div>
     </div>
 </div>
+
 <!--Footer-->
 <footer class="d-flex flex-column justify-content-between mt-auto p-4 border-top" id="footer">
     <div class="row mt-5 mb-3 mb-md-5">

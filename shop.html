@@ -71,8 +71,11 @@
 </nav>
 
 <div class="panel d-grid">
-    <img class="w-100 image-cover d-md-none" src="src/Shop/cover-mobile.webp" alt="Contadino e capretta">
-    <img class="w-100 image-cover d-none d-md-inline-block" src="src/Shop/cover.webp" alt="Contadino e capretta">
+    <img class="w-100 image-cover"
+         srcset="src/Shop/cover_1200.webp 1200w, src/Shop/cover_992.webp 992w, src/Shop/cover_390.webp 390w"
+         sizes="(min-width: 1200px) 1200px, (min-width: 992px) 992px, 390px"
+         src="src/Shop/cover_1200.webp"
+         alt="Contadino e capretta">
     <div class="w-100 shadow"></div>
     <img class="w-100 paper-cover align-self-end" src="src/papers/shop-articolo5.webp" alt="strappo di carta">
     <div class="container content d-grid">

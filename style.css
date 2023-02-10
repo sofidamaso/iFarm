@@ -598,13 +598,13 @@ b, h2{
 }
 
 .marker {
-    background-image: url('src/About/locationSVG35.svg');
+    background-image: url('src/About/marker.svg');
     width: 35px;
     height: 35px;
 }
 
 .marker:hover {
-    background-image: url('src/About/locationSVG35_hover.svg');
+    background-image: url('src/About/marker_hover.svg');
 }
 
 .mapboxgl-popup-content {
