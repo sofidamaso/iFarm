@@ -662,19 +662,19 @@ b, h2{
     background-position: center;
 }
 #img-card-mini1{
-    background-image: url('src/Blog/agenda2030-small.png');
+    background-image: url('src/Blog/agenda2030-small.webp');
 }
 #img-card-mini2{
-    background-image: url('src/Blog/agricoltura4-0-small.png');
+    background-image: url('src/Blog/agricoltura4-0-small.webp');
 }
 #img-card-mini3{
-    background-image: url('src/Blog/agrovoltaico-small.png');
+    background-image: url('src/Blog/agrovoltaico-small.webp');
 }
 #img-card-mini4{
-    background-image: url('src/Blog/droni-small.png');
+    background-image: url('src/Blog/droni-small.webp');
 }
 #img-card-mini5{
-    background-image: url('src/Blog/stazionemeteo-small.png');
+    background-image: url('src/Blog/stazionemeteo-small.webp');
 }
 
 .text-card-mini{
